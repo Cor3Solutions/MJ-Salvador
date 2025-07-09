@@ -840,28 +840,109 @@ iconify-icon.video-icon:hover {
   border-radius: 50%;
 }
 
-/* Initial hidden state for elements that will animate */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px); /* Start 20px below its final position */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+/* Add padding to the column items (the cards/containers for each video) */
+/* This creates space around the video and its title within each column */
+.vtr-item {
+  padding: 15px; /* Adjust this value as needed for desired spacing */
 }
 
-/* State when the element is in view and animated */
-.animate-on-scroll.is-visible {
-    opacity: 1;
-    transform: translateY(0); /* Move to its original position */
+.ratio-9x16 {
+  position: relative;
+  width: 100%;
+  padding-top: 177.77%; /* This correctly maintains the 9:16 aspect ratio */
+
+  /* Add margin to the bottom to create space between the video and its title */
+  margin-bottom: 15px; /* Adjust this value as needed */
+
+  /* Optional: If you find the videos are still too wide even within the padded columns,
+     you can set a max-width here and center them. This will make them smaller than 100%
+     of the column width if the column is very wide. */
+  /* max-width: 300px; */ /* Example: Limit max width of the video container */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
-/* Optional: You can add more specific animations if you want.
-   For example, a fade-in from left:
-.animate-on-scroll.slide-from-left.is-visible {
-    opacity: 1;
-    transform: translateX(0);
+.ratio-9x16 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Optional: Add a subtle border or shadow to visually separate the iframe */
+  /* border: 1px solid #eee; */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
-.animate-on-scroll.slide-from-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+/* Desktop (default) */
+.fixed-slide {
+  width: 3in;
+  height: 5in;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
-*/
+
+.fixed-slide img,
+.fixed-slide video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.swiper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* 📱 Mobile Layout Refined */
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    flex-wrap: nowrap !important;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 90vw;
+  }
+
+  .fixed-slide {
+    max-width: 90vw;
+    height: auto;
+    aspect-ratio: 3 / 5;
+    overflow: hidden;
+    margin: 10px auto;
+    border-radius: 12px;
+  }
+
+  .fixed-slide img,
+  .fixed-slide video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .swiper {
+    padding: 20px 15px 40px;
+  }
+}
+
+.card-img-container {
+  width: 100%;
+  aspect-ratio: 4 / 5; /* 1080x1350 aspect ratio */
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
