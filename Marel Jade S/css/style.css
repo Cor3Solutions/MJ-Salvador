@@ -944,5 +944,8 @@ iconify-icon.video-icon:hover {
   object-fit: cover;
   display: block;
 }
-
-
+.portrait-scrollbox {
+  max-height: 1300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}

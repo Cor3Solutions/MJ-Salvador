@@ -227,10 +227,13 @@
           </div>
         </div>
 
-        <!-- Slide 8: Image -->
+        <!-- Slide 8: Video -->
         <div class="swiper-slide">
           <div class="fixed-slide">
-            <img src="images/SWIPE/member-04.png" alt="Slide 7">
+            <video autoplay muted loop playsinline>
+              <source src="images/SWIPE/member-02.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
@@ -240,7 +243,6 @@
             <img src="images/SWIPE/member-02.jpg" alt="Slide 8">
           </div>
         </div>
-
       </div>
     </div>
 
@@ -474,7 +476,8 @@
       <!-- Filter buttons for portrait categories -->
       <div class="text-center my-4">
         <div class="btn-group flex-wrap">
-
+          <!-- All category button -->
+          <button class="filter-button btn btn-outline-dark me-2" data-filter="*">All</button>
           <!-- Gym category button -->
           <button class="filter-button btn btn-outline-dark me-2" data-filter=".gym">Gym</button>
 
@@ -484,8 +487,6 @@
               aria-expanded="false">
               Events
             </button>
-
-            <!-- Event filter options -->
             <ul class="dropdown-menu">
               <li><a class="dropdown-item filter-button" data-filter=".tnap">TNAP</a></li>
               <li><a class="dropdown-item filter-button" data-filter=".suysing">Suysing</a></li>
@@ -499,230 +500,274 @@
             </ul>
           </div>
 
+          <!-- Set Cards -->
+          <button class="filter-button btn btn-outline-dark me-2" data-filter=".setcard">Set Cards</button>
+
           <!-- TV Commercials button -->
           <button class="filter-button btn btn-outline-dark me-2" data-filter=".tvc">TV Commercials</button>
-
         </div>
       </div>
 
+      <!-- Scrollable grid wrapper -->
+      <div class="portrait-scrollbox">
+        <div class="isotope-container row g-4">
+          <!-- GYM -->
+          <div class="item gym col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/gym1.jpg" class="image-link">
+                <div style="position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden;">
+                  <img src="images/portraits/gym1.jpg" alt="Gym Portrait"
+                    style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Strength in Motion</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Southdrug Event Sample -->
+          <div class="item events southdrug col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/southdrug1.png" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/southdrug1.png" alt="Southdrug Event 1">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Southdrug Booth – Product Demos</h5>
+                </div>
+              </a>
+            </div>
+          </div>
 
-      <div class="isotope-container row g-4">
-        <!-- GYM -->
-        <div class="item gym col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/gym1.jpg" class="image-link">
-              <img src="images/gym1.jpg" class="img-fluid rounded" alt="Gym Portrait">
-              <div class="card-body text-center">
-                <h5 class="card-title">Strength in Motion</h5>
-              </div>
-            </a>
+          <div class="item events southdrug col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/southdrug2.png" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/southdrug2.png" alt="Southdrug Event 2">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Customer Engagement – Southdrug</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="item gym col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/gym2.jpg" class="image-link">
-              <img src="images/gym2.jpg" class="img-fluid rounded" alt="Gym Portrait">
-              <div class="card-body text-center">
-                <h5 class="card-title">Focus and Form</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item gym col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/gym3.jpg" class="image-link">
-              <img src="images/gym3.jpg" class="img-fluid rounded" alt="Gym Portrait">
-              <div class="card-body text-center">
-                <h5 class="card-title">Power Session</h5>
-              </div>
-            </a>
-          </div>
-        </div>
 
-        <!-- Southdrug Event Sample -->
-        <div class="item events southdrug col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/southdrug1.png" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/southdrug1.png" alt="Southdrug Event 1">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Southdrug Booth – Product Demos</h5>
-              </div>
-            </a>
+          <!-- Mang Inasal Event Sample -->
+          <div class="item events manginasal col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/inasal1.png" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/inasal1.png" alt="Mang Inasal Event">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
+          <!-- MUPH - Batangas Event Samples -->
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/flowy1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/flowy1.jpg" alt="Flowy Close-Up">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Flowy Close-Up</h5>
+                </div>
+              </a>
+            </div>
+          </div>
 
-        <div class="item events southdrug col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/southdrug2.png" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/southdrug2.png" alt="Southdrug Event 2">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Customer Engagement – Southdrug</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/flowy2.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/flowy2.jpg" alt="Flowy Dress Shot">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Flowy Dress Shot</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Mang Inasal Event Sample -->
-        <div class="item events manginasal col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/inasal1.png" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/inasal1.png" alt="Mang Inasal Event">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/sashing1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/sashing1.jpg" alt="Sashing Moment">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sashing Moment</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- MUPH - Batangas Event Samples -->
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/flowy1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/flowy1.jpg" alt="Flowy Close-Up">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Flowy Close-Up</h5>
-              </div>
-            </a>
-          </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/flowy2.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/flowy2.jpg" alt="Flowy Dress Shot">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Flowy Dress Shot</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot1.jpg" alt="Headshot">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Official Headshot</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/sashing1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/sashing1.jpg" alt="Sashing Moment">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Sashing Moment</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/justpause1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/justpause1.jpg" alt="Just Pause Shot">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Just Pause Moment</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/headshot1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/headshot1.jpg" alt="Headshot">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Official Headshot</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/graffiti1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/graffiti1.jpg" alt="Graffiti Wall">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Graffiti Vibe</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/justpause1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/justpause1.jpg" alt="Just Pause Shot">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Just Pause Moment</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/transporter1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/transporter1.jpg" alt="Transporter Shot">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Transporter Shot</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/graffiti1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/graffiti1.jpg" alt="Graffiti Wall">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Graffiti Vibe</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/eveninggown1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/eveninggown1.jpg" alt="Evening Gown Pose 1">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Evening Gown Pose 1</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/transporter1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/transporter1.jpg" alt="Transporter Shot">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Transporter Shot</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/eveninggown2.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/eveninggown2.jpg" alt="Evening Gown Pose 2">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Evening Gown Pose 2</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/eveninggown1.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/eveninggown1.jpg" alt="Evening Gown Pose 1">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Evening Gown Pose 1</h5>
-              </div>
-            </a>
+          <div class="item events muph col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/eveninggown3.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/eveninggown3.jpg" alt="Evening Gown Pose 3">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Evening Gown Pose 3</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/eveninggown2.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/eveninggown2.jpg" alt="Evening Gown Pose 2">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Evening Gown Pose 2</h5>
-              </div>
-            </a>
+          <!-- Set Card 1 -->
+          <div class="item events setcard col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/setcard1.jpeg" class="image-link">
+                <img src="images/portraits/setcard1.jpeg" class="img-fluid rounded" alt="Set Card 1">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Set Card 1</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="item events muph col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/portraits/eveninggown3.jpg" class="image-link">
-              <div class="card-img-container">
-                <img src="images/portraits/eveninggown3.jpg" alt="Evening Gown Pose 3">
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Evening Gown Pose 3</h5>
-              </div>
-            </a>
+          <!-- Set Card 2 -->
+          <div class="item events setcard col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/setcard2.jpg" class="image-link">
+                <img src="images/portraits/setcard2.jpg" class="img-fluid rounded" alt="Set Card 2">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Set Card 2</h5>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- TV COMMERCIALS -->
-        <div class="item tvc col-md-4">
-          <div class="card border-0 shadow-lg">
-            <a href="images/candid3.jpg" class="image-link">
-              <img src="images/candid3.jpg" class="img-fluid rounded" alt="TVC Portrait">
-              <div class="card-body text-center">
-                <h5 class="card-title">Everyday Glow (TVC Sample)</h5>
-              </div>
-            </a>
+          <!-- Set Card 3 -->
+          <div class="item events setcard col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/setcard3.jpg" class="image-link">
+                <img src="images/portraits/setcard3.jpg" class="img-fluid rounded" alt="Set Card 3">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Set Card 3</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Set Card 4 -->
+          <div class="item events setcard col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/setcard4.jpg" class="image-link">
+                <img src="images/portraits/setcard4.jpg" class="img-fluid rounded" alt="Set Card 4">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Set Card 4</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Set Card 5 -->
+          <div class="item events setcard col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/setcard5.jpg" class="image-link">
+                <img src="images/portraits/setcard5.jpg" class="img-fluid rounded" alt="Set Card 5">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Set Card 5</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- TV COMMERCIALS -->
+          <div class="item tvc col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/candid3.jpg" class="image-link">
+                <img src="images/candid3.jpg" class="img-fluid rounded" alt="TVC Portrait">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Everyday Glow (TVC Sample)</h5>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -747,29 +792,42 @@
       <!-- VTR video card -->
       <div class="col-lg-4 col-md-6 vtr-item vtrbasic">
         <div class="text-center">
-          <div class="ratio ratio-9x16">
-            <iframe src="https://www.youtube.com/embed/YOUR_VTR_VIDEO_ID" title="VTR" frameborder="0"
-              allowfullscreen></iframe>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://drive.google.com/file/d/1WWJPb3VDrCoeok_pc-3gV16T7dLVqGlO/preview" width="100%"
+              height="360" allow="autoplay" allowfullscreen>
+            </iframe>
           </div>
           <h5 class="mt-2">VTR</h5>
         </div>
       </div>
 
+
       <!-- Yes Acting video card -->
       <div class="col-lg-4 col-md-6 vtr-item yesacting">
         <div class="text-center">
-          <div class="ratio ratio-9x16">
-            <iframe src="https://www.youtube.com/embed/YOUR_YES_ACTING_VIDEO_ID" title="Yes Acting" frameborder="0"
-              allowfullscreen></iframe>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://drive.google.com/file/d/13jjyMYjVO-qsJLUMPSvOXnsKn9DJGlhz/preview" width="100%"
+              height="360" allow="autoplay" allowfullscreen>
+            </iframe>
           </div>
-          <h5 class="mt-2">Yes Acting</h5>
+          <h5 class="mt-2">Yes Acting 1</h5>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 vtr-item yesacting">
+        <div class="text-center">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://drive.google.com/file/d/1ZxIySXDPVAqVeq-KRVmzrTf_L6YKz_dj/preview" width="100%"
+              height="360" allow="autoplay" allowfullscreen>
+            </iframe>
+          </div>
+          <h5 class="mt-2">Yes Acting 2</h5>
         </div>
       </div>
 
       <!-- VTR with Yes Acting video card -->
       <div class="col-lg-4 col-md-6 vtr-item vtracting">
         <div class="text-center">
-          <div class="ratio ratio-9x16">
+          <div class="ratio ratio-16x9">
             <iframe src="https://www.youtube.com/embed/YOUR_VTR_WITH_ACTING_VIDEO_ID" title="VTR with Yes Acting"
               frameborder="0" allowfullscreen></iframe>
           </div>
@@ -784,8 +842,8 @@
 
         <!-- First video (VTR) -->
         <div class="carousel-item active">
-          <div class="ratio ratio-9x16">
-            <iframe src="https://www.youtube.com/embed/YOUR_VTR_VIDEO_ID" title="VTR" frameborder="0"
+          <div class="ratio ratio-16x9">
+            <iframe src="https://drive.google.com/file/d/1WWJPb3VDrCoeok_pc-3gV16T7dLVqGlO/preview" title="VTR" frameborder="0"
               allowfullscreen></iframe>
           </div>
           <h5 class="mt-2">VTR</h5>
@@ -793,20 +851,22 @@
 
         <!-- Second video (Yes Acting) -->
         <div class="carousel-item">
-          <div class="ratio ratio-9x16">
-            <iframe src="https://www.youtube.com/embed/YOUR_YES_ACTING_VIDEO_ID" title="Yes Acting" frameborder="0"
-              allowfullscreen></iframe>
+          <div class="ratio ratio-16x9">
+           <iframe src="https://drive.google.com/file/d/13jjyMYjVO-qsJLUMPSvOXnsKn9DJGlhz/preview" width="100%"
+              height="360" allow="autoplay" allowfullscreen>
+            </iframe>
           </div>
-          <h5 class="mt-2">Yes Acting</h5>
+          <h5 class="mt-2">Yes Acting 1</h5>
         </div>
 
         <!-- Third video (VTR w/ Yes Acting) -->
         <div class="carousel-item">
-          <div class="ratio ratio-9x16">
-            <iframe src="https://www.youtube.com/embed/YOUR_VTR_WITH_ACTING_VIDEO_ID" title="VTR w/ Yes Acting"
-              frameborder="0" allowfullscreen></iframe>
+          <div class="ratio ratio-16x9">
+             <iframe src="https://drive.google.com/file/d/1ZxIySXDPVAqVeq-KRVmzrTf_L6YKz_dj/preview" width="100%"
+              height="360" allow="autoplay" allowfullscreen>
+            </iframe>
           </div>
-          <h5 class="mt-2">VTR w/ Yes Acting</h5>
+          <h5 class="mt-2">Yes Acting 2</h5>
         </div>
       </div>
 
@@ -885,169 +945,168 @@
 
 
   <!-- Footer Section -->
-<footer class="bg-dark text-white">
-  <div class="container">
-    <div class="row pt-3 border-top">
-      <!-- Left side: Copyright -->
-      <div class="col-md-6">
-        <p class="fs-6">© 2025 Cor3Solutions</p>
-      </div>
-      <!-- Right side: Attribution -->
-      <div class="col-md-6 text-lg-end">
-        <p class="fs-6">
-          through 
-          <a href="https://templatesjungle.com/" class="text-primary" target="_blank">TemplatesJungle</a>
-        </p>
+  <footer class="bg-dark text-white">
+    <div class="container">
+      <div class="row pt-3 border-top">
+        <!-- Left side: Copyright -->
+        <div class="col-md-6">
+          <p class="fs-6">© 2025 Cor3Solutions</p>
+        </div>
+        <!-- Right side: Attribution -->
+        <div class="col-md-6 text-lg-end">
+          <p class="fs-6">
+            through
+            <a href="https://templatesjungle.com/" class="text-primary" target="_blank">TemplatesJungle</a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Load JavaScript Libraries -->
-<script src="js/jquery-1.11.0.min.js"></script> <!-- Older jQuery (optional if not used) -->
+  <!-- Load JavaScript Libraries -->
+  <script src="js/jquery-1.11.0.min.js"></script> <!-- Older jQuery (optional if not used) -->
 
-<!-- Recommended: KEEP ONLY ONE Bootstrap version -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Recommended: KEEP ONLY ONE Bootstrap version -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Swiper.js for carousels -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Swiper.js for carousels -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<!-- Isotope.js for filtering -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- Isotope.js for filtering -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-<!-- jQuery (latest) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery (latest) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Custom JavaScript -->
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
+  <!-- Custom JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
 
-    // === Main Banner Swiper Initialization ===
-    const mainBannerSwiper = new Swiper(".main-banner", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      speed: 1000,
-      slidesPerView: 5,
-      spaceBetween: 10,
-      pagination: {
-        el: "#mobile-products .swiper-pagination", // Pagination target (if applicable)
-        clickable: true,
-      },
-      breakpoints: {
-        0: { slidesPerView: 3, spaceBetween: 20 },
-        980: { slidesPerView: 4, spaceBetween: 20 },
-        1200: { slidesPerView: 5, spaceBetween: 20 }
-      },
-    });
-
-    // === Testimonials Swiper Initialization ===
-    const testimonialSwiper = new Swiper(".testimonialSwiper", {
-      loop: true,
-      grabCursor: true,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-      },
-      breakpoints: {
-        640: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }
-    });
-
-    // === Isotope Initialization for Portraits Section ===
-    var iso = new Isotope('.isotope-container', {
-      itemSelector: '.item',
-      layoutMode: 'fitRows'
-    });
-
-    // === Portraits Filter Button Click Handler ===
-    var filterButtons = document.querySelectorAll('.filter-button');
-    filterButtons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
-        var filterValue = this.getAttribute('data-filter');
-        iso.arrange({ filter: filterValue });
-      });
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    // === Isotope for VTR Section (Desktop View Only) ===
-    var vtrGallery = document.querySelector('.vtr-gallery');
-    if (vtrGallery) {
-      var isoVtr = new Isotope(vtrGallery, {
-        itemSelector: '.vtr-item',
-        layoutMode: 'fitRows'
+      // === Main Banner Swiper Initialization ===
+      const mainBannerSwiper = new Swiper(".main-banner", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        speed: 2000,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        breakpoints: {
+          0: { slidesPerView: 3, spaceBetween: 20 },
+          980: { slidesPerView: 4, spaceBetween: 20 },
+          1200: { slidesPerView: 5, spaceBetween: 20 }
+        },
+        pagination: false // <-- disables pagination safely
       });
 
-      var vtrFilterButtons = document.querySelectorAll('#vtr .filter-button');
-      vtrFilterButtons.forEach(function (button) {
-        button.addEventListener('click', function () {
-          var filterValue = this.getAttribute('data-filter');
-          isoVtr.arrange({ filter: filterValue });
 
-          // Toggle active styles
-          vtrFilterButtons.forEach(function (btn) {
-            btn.classList.remove('active', 'btn-dark');
-            btn.classList.add('btn-outline-dark');
-          });
-          this.classList.add('active', 'btn-dark');
-          this.classList.remove('btn-outline-dark');
-        });
+      // === Testimonials Swiper Initialization ===
+      const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }
       });
-    }
 
-    // === Optional: Isotope for Portraits (if not already initialized) ===
-    var portraitsContainer = document.querySelector('.isotope-container');
-    if (portraitsContainer) {
-      var isoPortraits = new Isotope(portraitsContainer, {
+      // === Isotope Initialization for Portraits Section ===
+      var iso = new Isotope('.isotope-container', {
         itemSelector: '.item',
         layoutMode: 'fitRows'
       });
 
-      var portraitFilterButtons = document.querySelectorAll('#portraits-section .filter-button');
-      portraitFilterButtons.forEach(function (button) {
+      // === Portraits Filter Button Click Handler ===
+      var filterButtons = document.querySelectorAll('.filter-button');
+      filterButtons.forEach(function (button) {
         button.addEventListener('click', function () {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
           var filterValue = this.getAttribute('data-filter');
-          isoPortraits.arrange({ filter: filterValue });
-
-          // Toggle active styles
-          portraitFilterButtons.forEach(function (btn) {
-            btn.classList.remove('active', 'btn-dark');
-            btn.classList.add('btn-outline-dark');
-          });
-          this.classList.add('active', 'btn-dark');
-          this.classList.remove('btn-outline-dark');
+          iso.arrange({ filter: filterValue });
         });
       });
-    }
-  });
-
-  // === Optional jQuery-based Isotope Filtering (legacy support) ===
-  $(document).ready(function () {
-    var $grid = $('.isotope-container').isotope({
-      itemSelector: '.item',
-      layoutMode: 'fitRows'
     });
 
-    $('.filter-button').on('click', function () {
-      var filterValue = $(this).attr('data-filter');
-      $grid.isotope({ filter: filterValue });
+    document.addEventListener('DOMContentLoaded', function () {
+      // === Isotope for VTR Section (Desktop View Only) ===
+      var vtrGallery = document.querySelector('.vtr-gallery');
+      if (vtrGallery) {
+        var isoVtr = new Isotope(vtrGallery, {
+          itemSelector: '.vtr-item',
+          layoutMode: 'fitRows'
+        });
 
-      // Toggle button states
-      $('.filter-button').removeClass('active btn-dark').addClass('btn-outline-dark');
-      $(this).addClass('active btn-dark').removeClass('btn-outline-dark');
+        var vtrFilterButtons = document.querySelectorAll('#vtr .filter-button');
+        vtrFilterButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var filterValue = this.getAttribute('data-filter');
+            isoVtr.arrange({ filter: filterValue });
+
+            // Toggle active styles
+            vtrFilterButtons.forEach(function (btn) {
+              btn.classList.remove('active', 'btn-dark');
+              btn.classList.add('btn-outline-dark');
+            });
+            this.classList.add('active', 'btn-dark');
+            this.classList.remove('btn-outline-dark');
+          });
+        });
+      }
+
+      // === Optional: Isotope for Portraits (if not already initialized) ===
+      var portraitsContainer = document.querySelector('.isotope-container');
+      if (portraitsContainer) {
+        var isoPortraits = new Isotope(portraitsContainer, {
+          itemSelector: '.item',
+          layoutMode: 'fitRows'
+        });
+
+        var portraitFilterButtons = document.querySelectorAll('#portraits-section .filter-button');
+        portraitFilterButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var filterValue = this.getAttribute('data-filter');
+            isoPortraits.arrange({ filter: filterValue });
+
+            // Toggle active styles
+            portraitFilterButtons.forEach(function (btn) {
+              btn.classList.remove('active', 'btn-dark');
+              btn.classList.add('btn-outline-dark');
+            });
+            this.classList.add('active', 'btn-dark');
+            this.classList.remove('btn-outline-dark');
+          });
+        });
+      }
     });
-  });
-</script>
+
+    // === Optional jQuery-based Isotope Filtering (legacy support) ===
+    $(document).ready(function () {
+      var $grid = $('.isotope-container').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+
+      $('.filter-button').on('click', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+
+        // Toggle button states
+        $('.filter-button').removeClass('active btn-dark').addClass('btn-outline-dark');
+        $(this).addClass('active btn-dark').removeClass('btn-outline-dark');
+      });
+    });
+  </script>
 </body>
+
 </html>
