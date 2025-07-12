@@ -1,67 +1,40 @@
-It is a free HTML CSS template by TemplatesJungle.com
-You can use this template as a starter template and start building as you require.
+# Jade Salvador – Portfolio Website
 
-The code is consistent and can be easily maintained as we have followed a good coding standards. We want everyone to easily understand it and modify it according to their requirement. As the main goal of providing these templates is to give you something to work on before even starting.
+Welcome to my official portfolio! I’m Jade Salvador—an Executive Virtual Assistant, commercial model, and host. This site showcases a curated selection of my recent projects, including portraits, brand collaborations, VTRs, and live event appearances.
 
+## ✨ About Me
 
-FREE FOR BOTH PERSONAL AND COMMERCIAL USE
+I'm a multi-faceted creative professional with experience in:
 
-This HTML Template is provided by TemplatesJungle.com and is free to use in both personal and commercial projects as long as you don't remove our credit link in the footer.
+- 📸 Portrait and Commercial Modeling  
+- 🎥 VTR and Acting Showreels  
+- 🎤 Hosting Events and Brand Launches  
+- 💻 Virtual Assistance & Business Support  
 
-However, you can remove the credit link by paying for PRO version of the template which includes additional pages as well.
+With a background in both creative and administrative work, I take pride in blending professionalism, personality, and performance across everything I do.
 
-PRO Version:
+## 🔍 Portfolio Highlights
 
-https://templatesjungle.gumroad.com/l/hannah-html-template
+- **Portraits** – Gym, events, set cards, and editorial-style photoshoots  
+- **Events** – Live brand activations, booth tours, and corporate engagements  
+- **VTR & Acting Reels** – Videos categorized by type: basic VTR, acting, and combined scenes  
+- **Responsive Design** – Optimized for both desktop and mobile viewing  
+- **Filterable Gallery** – Easily explore my work based on category or theme
 
+## 🛠 Built With
 
-RIGHTS
+- HTML5 / CSS3 / Bootstrap 5  
+- JavaScript (for filtering and interactivity)  
+- GitHub Pages (for deployment)  
+- Google Drive + YouTube (for embedded video content)
 
-You are allowed to use it in your personal projects and commercial projects.
+## 📬 Connect With Me
 
-You can modify and sell it to your clients.
+For bookings, collaborations, or to simply say hello:
 
+- **Instagram**: [@jade.salvador](https://instagram.com/jade.salvador)  
+- **LinkedIn**: [Jade Salvador](https://linkedin.com/in/jade-salvador)
 
-PROHIBITIONS
+---
 
-You cannot remove the credit link which links back to templatesjungle.com.
-
-You are not permitted to resell or redistribute (paid or free) as it is. 
-
-You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.
-
-If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. 
-
-You cannot host the download file in your website.
-
-
-SUPPORT
-
-You can contact us to report any bugs and errors in the template. We will try and fix them immediately although it's a free resource.
-
-Feel free to let us know about what you want to see in the future downloads. We will definitely give it a thought while creating our next freebie.
-
-
-CREDITS & REFERENCES
-
-https://getbootstrap.com/
-
-Stock Photos
-https://unsplash.com/
-https://www.pexels.com/
-
-Fonts
-Google fonts
-https://fonts.google.com/
-
-Icons
-https://iconify.design/
-
-JQuery Plugins
-
-Swiper Slider - https://swiperjs.com/
-Chocolat.js – a Free Lightbox Plugin -http://chocolat.insipi.de/
-
-Thanks for downloading from TemplatesJungle.com !
-
-
+Thanks for visiting! 💛
