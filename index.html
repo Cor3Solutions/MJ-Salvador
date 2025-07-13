@@ -1229,7 +1229,7 @@
     </div>
 
     <!-- Mobile version: Carousel view -->
-    <div id="vtrCarousel" class="carousel slide d-md-none mt-5" data-bs-ride="carousel" data-bs-touch="false">
+    <div id="vtrCarousel" class="carousel slide d-md-none mt-5" data-bs-ride="carousel">
       <div class="carousel-inner text-center">
 
         <!-- First video (VTR) -->
@@ -1499,17 +1499,6 @@
       });
     });
 
-    const vtrCarousel = document.getElementById('vtrCarousel');
-
-    if (vtrCarousel) {
-      vtrCarousel.addEventListener('slid.bs.carousel', function () {
-        const iframes = vtrCarousel.querySelectorAll('iframe');
-        iframes.forEach((iframe) => {
-          const src = iframe.src;
-          iframe.src = src; // Reset the iframe to stop the video
-        });
-      });
-    }
   </script>
 </body>
 
