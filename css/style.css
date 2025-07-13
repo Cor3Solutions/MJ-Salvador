@@ -933,7 +933,7 @@ iconify-icon.video-icon:hover {
 
 .card-img-container {
   width: 100%;
-  aspect-ratio: 4 / 5; /* 1080x1350 aspect ratio */
+  aspect-ratio: 9 / 16; /* 1080x1350 aspect ratio */
   overflow: hidden;
   border-radius: 0.5rem;
 }
@@ -949,3 +949,5 @@ iconify-icon.video-icon:hover {
   overflow-y: auto;
   padding-right: 10px;
 }
+
+ 
