@@ -175,6 +175,7 @@
     </div>
   </nav>
 
+  <!-- Banner Section -->
   <section class="banner-section position-relative text-center py-5">
     <!-- Swiper container for sliding images and videos -->
     <div class="main-banner swiper">
@@ -278,7 +279,7 @@
     </div>
   </section>
 
-
+  <!-- CV Section -->
   <section id="about" class="my-5 py-5 bg-text">
     <div class="container">
       <div class="text-center mb-5">
@@ -480,14 +481,12 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 
-
+  <!-- Gallery -->
   <section id="portraits-section" class="my-5 py-5 bg-text">
     <div class="container">
 
@@ -500,10 +499,18 @@
       <!-- Filter buttons for portrait categories -->
       <div class="text-center my-4">
         <div class="btn-group flex-wrap">
-          <!-- All category button -->
-          <button class="filter-button btn btn-outline-dark me-2" data-filter="*">All</button>
-          <!-- Gym category button -->
-          <button class="filter-button btn btn-outline-dark me-2" data-filter=".gym">Gym</button>
+          <button class="filter-button btn btn-outline-dark me-2" data-filter=".muph">All</button>
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gym
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item filter-button" data-filter=".boxing">MMA</a></li> 
+              <li><a class="dropdown-item filter-button" data-filter=".gymoutfits">Gym Outfits</a></li>
+              <li><a class="dropdown-item filter-button" data-filter=".weightlifting">Weight Lifting</a></li>
+            </ul>
+          </div>
 
           <!-- Dropdown for Events -->
           <div class="btn-group me-2">
@@ -526,8 +533,6 @@
                   Week</a></li>
             </ul>
           </div>
-
-          <!-- Set Cards -->
           <button class="filter-button btn btn-outline-dark me-2" data-filter=".setcard">Set Cards</button>
           <button class="filter-button btn btn-outline-dark me-2" data-filter=".headshots">Head Shots</button>
         </div>
@@ -536,544 +541,6 @@
       <!-- Scrollable grid wrapper -->
       <div class="portrait-scrollbox">
         <div class="isotope-container row g-4">
-          <!-- GYM -->
-          <!-- GYM Portraits -->
-          <div class="row">
-            <!-- gym1 to gym9 -->
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym1.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym1.png" alt="Gym Portrait 1"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 1</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym2.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym2.png" alt="Gym Portrait 2"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 2</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym3.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym3.png" alt="Gym Portrait 3"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 3</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym4.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym4.png" alt="Gym Portrait 4"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 4</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym5.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym5.png" alt="Gym Portrait 5"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 5</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym6.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym6.png" alt="Gym Portrait 6"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 6</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym7.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym7.png" alt="Gym Portrait 7"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 7</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym8.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym8.png" alt="Gym Portrait 8"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 8</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gym col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym9.png" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/gym9.png" alt="Gym Portrait 9"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Gym Portrait 9</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Southdrug Event Video (YouTube Shorts) -->
-          <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/MyjfEfXIQlA" title="Southdrug Event Video" frameborder="0"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Southdrug – Event Video</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Southdrug Event Sample -->
-          <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/southdrug1.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/southdrug1.png" alt="Southdrug Event 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Southdrug Booth – Product Demos</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/southdrug2.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/southdrug2.png" alt="Southdrug Event 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Customer Engagement – Southdrug</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- RiteMed Event Video -->
-          <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/cWsAzrK0iEA" title="RiteMed Event Video" frameborder="0"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">RiteMed Booth Highlights</h5>
-              </div>
-            </div>
-          </div>
-          <!-- RiteMed Event Photo 1 -->
-          <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/ritemed1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/ritemed1.jpg" alt="RiteMed Event 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Product Sampling – RiteMed</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- RiteMed Event Photo 2 -->
-          <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/ritemed2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/ritemed2.jpg" alt="RiteMed Event 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Customer Engagement – RiteMed</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Mang Inasal Event Video -->
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/6vyNM0-lsEA" title="Mang Inasal Highlights" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Mang Inasal Event Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/inasal1.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/inasal1.png" alt="Mang Inasal Event">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/inasal1.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/inasal2.jpg" alt="Mang Inasal Event">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- PCP Convention Video -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/Trwp6uVhywc" title="PCP Convention Video" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">PCP Convention Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- PCP Convention Photo 1 -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/pcp1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/pcp1.jpg" alt="PCP Convention 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">PCP Convention – Day 1</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- PCP Convention Photo 2 -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/pcp2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/pcp2.jpg" alt="PCP Convention 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">PCP Convention – Day 2</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- TNAP Event Video -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/LMM2mNkPH3g" title="TNAP Event Video" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">TNAP Event Highlights</h5>
-              </div>
-            </div>
-          </div>
-          <!-- TNAP Photo 1 -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/tnap1.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/tnap1.png" alt="TNAP Photo 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">TNAP – Engagement Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- TNAP Photo 2 -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/tnap2.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/tnap2.png" alt="TNAP Photo 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">TNAP – Booth Setup</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Suysing Photo 2 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/suysing2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing2.jpg" alt="Suysing Event 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Suysing Product Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- Suysing Photo 1 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/suysing1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing1.jpg" alt="Suysing Event 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Suysing Event Highlight</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Suysing Photo 3 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/suysing3.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing3.jpg" alt="Suysing Event 3">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Engagement at Suysing</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- CIFAW Event Video -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/WsnyO5IYLDU" title="CIFAW Highlights" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">CIFAW Highlights</h5>
-              </div>
-            </div>
-          </div>
-          <!-- CIFAW Photo 1 -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/cifaw1.png" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/cifaw1.png" alt="CIFAW Photo 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Runway Moment – CIFAW</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- CIFAW Photo 2 -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/cifaw2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/cifaw2.jpg" alt="CIFAW Photo 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">CIFAW – Backstage & Glam</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Meta Ace Event Video -->
-          <div class="item events metaace col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/u0YFKUuWyhs" title="Meta Ace Event" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Meta Ace Highlights</h5>
-              </div>
-            </div>
-          </div>
-          <!-- Meta Ace Photo 1 -->
-          <div class="item events metaace col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/meta1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/meta1.jpg" alt="Meta Ace Photo 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Meta Ace Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Meta Ace Photo 2 -->
-          <div class="item events metaace col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/meta2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/meta2.jpg" alt="Meta Ace Photo 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Meta Ace Product Showcase</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida S2 Netflix Event Video -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/7UvuYB1-C-k" title="Bida S2 Netflix" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Bida S2 Netflix Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bida Photo 1 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/bida1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida1.jpg" alt="Bida S2 Netflix Photo 1">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Bida S2 Moment</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida Photo 2 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/bida2.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida2.jpg" alt="Bida S2 Netflix Photo 2">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Behind the Scenes – Bida S2</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida Photo 3 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/bida3.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida3.jpg" alt="Bida S2 Netflix Photo 3">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Netflix Bida Cast</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida Photo 4 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/bida4.jpeg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida4.jpeg" alt="Bida S2 Netflix Photo 4">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Engaging the Audience</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida Photo 5 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/bida5.jpeg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida5.jpeg" alt="Bida S2 Netflix Photo 5">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Bida Netflix Campaign</h5>
-                </div>
-              </a>
-            </div>
-          </div>
 
           <!-- MUPH - Batangas Event Samples -->
           <div class="item events muph col-md-4">
@@ -1104,12 +571,12 @@
 
           <div class="item events muph col-md-4">
             <div class="card border-0 shadow-lg">
-              <a href="images/portraits/sashing1.jpg" class="image-link">
+              <a href="images/portraits/justpause1.jpg" class="image-link">
                 <div class="card-img-container">
-                  <img src="images/portraits/sashing1.jpg" alt="Sashing Moment">
+                  <img src="images/portraits/justpause1.jpg" alt="Just Pause Shot">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Sashing Moment</h5>
+                  <h5 class="card-title">Just Pause Moment</h5>
                 </div>
               </a>
             </div>
@@ -1122,20 +589,7 @@
                   <img src="images/portraits/headshot1.jpg" alt="Headshot">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Official Headshot</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="item events muph col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="images/portraits/justpause1.jpg" class="image-link">
-                <div class="card-img-container">
-                  <img src="images/portraits/justpause1.jpg" alt="Just Pause Shot">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Just Pause Moment</h5>
+                  <h5 class="card-title">Headshot</h5>
                 </div>
               </a>
             </div>
@@ -1156,6 +610,19 @@
 
           <div class="item events muph col-md-4">
             <div class="card border-0 shadow-lg">
+              <a href="images/portraits/sashing1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/sashing1.jpg" alt="Sashing Moment">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sashing Moment</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="item events muph col-md-4 mb-4">
+            <div class="card border-0 shadow-lg">
               <a href="images/portraits/eveninggown1.jpg" class="image-link">
                 <div class="card-img-container">
                   <img src="images/portraits/eveninggown1.jpg" alt="Evening Gown Pose 1">
@@ -1167,7 +634,7 @@
             </div>
           </div>
 
-          <div class="item events muph col-md-4">
+          <div class="item events muph col-md-4 mb-4">
             <div class="card border-0 shadow-lg">
               <a href="images/portraits/eveninggown2.jpg" class="image-link">
                 <div class="card-img-container">
@@ -1180,7 +647,7 @@
             </div>
           </div>
 
-          <div class="item events muph col-md-4">
+          <div class="item events muph col-md-4 mb-4">
             <div class="card border-0 shadow-lg">
               <a href="images/portraits/eveninggown3.jpg" class="image-link">
                 <div class="card-img-container">
@@ -1195,428 +662,1056 @@
 
           <div class="row">
             <!-- Missu 1 to 15 -->
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu1.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu1.png" alt="Miss U Pose 1">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 1</h5>
+                    <h5 class="card-title">Preliminary Gown</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu2.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu2.png" alt="Miss U Pose 2">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 2</h5>
+                    <h5 class="card-title">Preliminary Swimwear </h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu3.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu3.png" alt="Miss U Pose 3">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 3</h5>
+                    <h5 class="card-title">Preliminary Swimwear</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/missu4.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/missu4.png" alt="Miss U Pose 4">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 4</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu5.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu5.png" alt="Miss U Pose 5">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 5</h5>
+                    <h5 class="card-title">Preliminary Swimwear</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/missu4.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/missu4.png" alt="Miss U Pose 4">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Graffiti Outfit</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu6.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu6.png" alt="Miss U Pose 6">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 6</h5>
+                    <h5 class="card-title">Preliminary Swimwear</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu7.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu7.png" alt="Miss U Pose 7">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 7</h5>
+                    <h5 class="card-title">Swimwear Challenge</h5>
                   </div>
                 </a>
               </div>
             </div>
 
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu9.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu9.png" alt="Miss U Pose 9">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 9</h5>
+                    <h5 class="card-title">Showtime</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu10.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu10.png" alt="Miss U Pose 10">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 10</h5>
+                    <h5 class="card-title">Showtime</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu11.png" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu11.png" alt="Miss U Pose 11">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 11</h5>
+                    <h5 class="card-title">Lake O' Cali Moments</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu12.jpg" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu12.jpg" alt="Miss U Pose 12">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 12</h5>
+                    <h5 class="card-title">747</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu13.jpg" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu13.jpg" alt="Miss U Pose 13">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 13</h5>
+                    <h5 class="card-title">Heera Glow</h5>
                   </div>
                 </a>
               </div>
             </div>
 
-            <div class="item events muph col-md-4">
+            <div class="item events muph col-md-4 mb-4">
               <div class="card border-0 shadow-lg">
                 <a href="images/portraits/missu14.jpg" class="image-link">
                   <div class="card-img-container">
                     <img src="images/portraits/missu14.jpg" alt="Miss U Pose 14">
                   </div>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Miss U Pose 14</h5>
+                    <h5 class="card-title">Little Sweets</h5>
                   </div>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Set Card 3 -->
-          <div class="item events setcard col-md-4">
+          <!-- GYM Portraits -->
+          <div class="row">
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym1.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym1.png" alt="Sporty Set 1">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Sporty Set 1</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym2.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym2.png" alt="Performance Gear 5">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Performance Gear 5</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym3.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym3.png" alt="Athleisure Look 3">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Athleisure Look 3</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym4.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym4.png" alt="Stretch & Go 4">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Stretch & Go 4</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym5.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym5.png" alt="Fitness Fit 2">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Fitness Fit 2</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym6.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym6.png" alt="Sweat Mode 6">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Sweat Mode 6</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym7.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym7.png" alt="Toned Look 7">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Toned Look 7</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym8.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym8.png" alt="Power Pose 8">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Power Pose 8</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item gymoutfits col-md-4 mb-4">
+              <div class="card border-0 shadow-lg">
+                <a href="images/portraits/gym9.png" class="image-link">
+                  <div class="card-img-container">
+                    <img src="images/portraits/gym9.png" alt="Core Fit 9">
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Core Fit 9</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="item gym boxing col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/2GOTFn4ABrU" title="Boxing Short 1" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="item  gym boxing col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/sioYboXiaJA" title="Boxing Short 2" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="item gym boxing col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/3DpG4YcWE3w" title="Boxing Short 3" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="item gym boxing col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/Aj6Y1xQst40" title="Boxing Short 4" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="row">
+            <div class="item gym weightlifting col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/jGVONDsuV78" title="Weightlifting Short 1" frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <div class="item gym weightlifting col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/WB4ZDzP0LF8" title="Weightlifting Short 2" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="item gym weightlifting col-md-4">
+              <div class="ratio ratio-9x16 shadow-lg rounded">
+                <iframe src="https://www.youtube.com/embed/hhco-8_omMY" title="Weightlifting Short 3" frameborder="0"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Southdrug Event Video (YouTube Shorts) -->
+        <div class="item events southdrug col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/MyjfEfXIQlA" title="Southdrug Event Video" frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Southdrug – Event Video</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Southdrug Event Sample -->
+        <div class="item events southdrug col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/southdrug1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/southdrug1.png" alt="Southdrug Event 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Southdrug Booth – Product Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="item events southdrug col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/southdrug2.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/southdrug2.png" alt="Southdrug Event 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Customer Engagement – Product Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RiteMed Event Video -->
+        <div class="item events ritemed col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/cWsAzrK0iEA" title="RiteMed Event Video" frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">RiteMed Booth Highlights</h5>
+            </div>
+          </div>
+        </div>
+        <!-- RiteMed Event Photo 1 -->
+        <div class="item events ritemed col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/RITEMED1.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/RITEMED1.jpg" alt="RiteMed Event 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">RiteMed Event Place</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- RiteMed Event Photo 2 -->
+        <div class="item events ritemed col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/RITEMED2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/RITEMED2.jpg" alt="RiteMed Event 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">RiteMed Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Mang Inasal Event Video -->
+        <div class="item events manginasal col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/6vyNM0-lsEA" title="Mang Inasal Highlights" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mang Inasal Event Highlights</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="item events manginasal col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/inasal1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/inasal1.png" alt="Mang Inasal Event">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="item events manginasal col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/inasal1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/inasal2.jpg" alt="Mang Inasal Event">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- PCP Convention Video -->
+        <div class="item events pcp col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/Trwp6uVhywc" title="PCP Convention Video" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PCP Convention Highlights</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- PCP Convention Photo 1 -->
+        <div class="item events pcp col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/pcp1.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/pcp1.jpg" alt="PCP Convention 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">PCP Convention – Day 1</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- PCP Convention Photo 2 -->
+        <div class="item events pcp col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/pcp2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/pcp2.jpg" alt="PCP Convention 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">PCP Convention – Day 2</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- TNAP Event Video -->
+        <div class="item events tnap col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/LMM2mNkPH3g" title="TNAP Event Video" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">TNAP Event Highlights</h5>
+            </div>
+          </div>
+        </div>
+        <!-- TNAP Photo 1 -->
+        <div class="item events tnap col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/tnap1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/tnap1.png" alt="TNAP Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">TNAP – Hosting</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- TNAP Photo 2 -->
+        <div class="item events tnap col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/tnap2.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/tnap2.png" alt="TNAP Photo 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">TNAP – Group Team</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Suysing Photo 2 -->
+        <div class="item events suysing col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/suysing2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/suysing2.jpg" alt="Suysing Event 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Suysing</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Suysing Photo 1 -->
+        <div class="item events suysing col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/suysing1.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/suysing1.jpg" alt="Suysing Event 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Product</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Suysing Photo 3 -->
+        <div class="item events suysing col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/suysing3.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/suysing3.jpg" alt="Suysing Event 3">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- CIFAW Event Video -->
+        <div class="item events cifaw col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/WsnyO5IYLDU" title="CIFAW Highlights" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CIFAW Highlights</h5>
+            </div>
+          </div>
+        </div>
+        <!-- CIFAW Photo 1 -->
+        <div class="item events cifaw col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/cifaw1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/cifaw1.png" alt="CIFAW Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Official Posting – CIFAW</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- CIFAW Photo 2 -->
+        <div class="item events cifaw col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/cifaw2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/cifaw2.jpg" alt="CIFAW Photo 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">CIFAW </h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Lemon Dou -->
+        <div class="item events lemon col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/AAmZJEbIP_4" title="Lemon Dou Highlights" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Lemon Dou Highlights</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="item events lemon col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/lemon1.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/lemon1.png" alt="Meta Ace Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Meta Ace - Fit Check</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="item events lemon col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/lemon3.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/lemon3.png" alt="Meta Ace Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Lemon Dou - Booth</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="item events lemon col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/lemon2.png" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/lemon2.png" alt="Meta Ace Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Lemon Dou - Events Place</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Meta Ace Event Video -->
+        <div class="item events metaace col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/u0YFKUuWyhs" title="Meta Ace Event" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Meta Ace Highlights</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Meta Ace Photo 1 -->
+        <div class="item events metaace col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/meta1.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/meta1.jpg" alt="Meta Ace Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Meta Ace - Fit Check</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Meta Ace Photo 2 -->
+        <div class="item events metaace col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/meta2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/meta2.jpg" alt="Meta Ace Photo 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Meta Ace - Co Models</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bida S2 Netflix Event Video -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <div class="ratio ratio-9x16">
+              <iframe src="https://www.youtube.com/embed/7UvuYB1-C-k" title="Bida S2 Netflix" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Bida S2 Netflix Highlights</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bida Photo 1 -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/bida1.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/bida1.jpg" alt="Bida S2 Netflix Photo 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bida S2</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bida Photo 2 -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/bida2.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/bida2.jpg" alt="Bida S2 Netflix Photo 2">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Behind the Scenes – with Lovi Poe</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bida Photo 3 -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/bida3.jpg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/bida3.jpg" alt="Bida S2 Netflix Photo 3">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bida S2</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bida Photo 4 -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/bida4.jpeg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/bida4.jpeg" alt="Bida S2 Netflix Photo 4">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bida S2 Moment</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bida Photo 5 -->
+        <div class="item events bida col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/bida5.jpeg" class="image-link">
+              <div class="card-img-container">
+                <img src="images/portraits/bida5.jpeg" alt="Bida S2 Netflix Photo 5">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bida S2 Co-Actress</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="item events setcard col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/setcard1.jpg" class="image-link">
+              <img src="images/portraits/setcard1.jpg" class="img-fluid rounded" alt="Set Card 3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Set Card 1</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Set Card 2 -->
+        <div class="item events setcard col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/setcard3.jpg" class="image-link">
+              <img src="images/portraits/setcard3.jpg" class="img-fluid rounded" alt="Set Card 3">
+              <div class="card-body text-center">
+                <h5 class="card-title">Set Card 2</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Set Card 3 -->
+        <div class="item events setcard col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/setcard4.jpg" class="image-link">
+              <img src="images/portraits/setcard4.jpg" class="img-fluid rounded" alt="Set Card 4">
+              <div class="card-body text-center">
+                <h5 class="card-title">Set Card 3</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Set Card 4 -->
+        <div class="item events setcard col-md-4">
+          <div class="card border-0 shadow-lg">
+            <a href="images/portraits/setcard5.jpg" class="image-link">
+              <img src="images/portraits/setcard5.jpg" class="img-fluid rounded" alt="Set Card 5">
+              <div class="card-body text-center">
+                <h5 class="card-title">Set Card 4</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Headshots Section -->
+        <div class="row headshots gy-4 gx-4">
+
+          <!-- Headshot 7 -->
+          <div class="item headshots col-md-4">
             <div class="card border-0 shadow-lg">
-              <a href="images/portraits/setcard3.jpg" class="image-link">
-                <img src="images/portraits/setcard3.jpg" class="img-fluid rounded" alt="Set Card 3">
+              <a href="images/portraits/headshot7.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot7.jpg" alt="Headshot 7">
+                </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Set Card 3</h5>
+                  <h5 class="card-title">Headshot 1</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Set Card 4 -->
-          <div class="item events setcard col-md-4">
+          <!-- Headshot 8 to 15 (same structure) -->
+          <div class="item headshots col-md-4">
             <div class="card border-0 shadow-lg">
-              <a href="images/portraits/setcard4.jpg" class="image-link">
-                <img src="images/portraits/setcard4.jpg" class="img-fluid rounded" alt="Set Card 4">
+              <a href="images/portraits/headshot8.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot8.jpg" alt="Headshot 8">
+                </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Set Card 4</h5>
+                  <h5 class="card-title">Headshot 2</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Set Card 5 -->
-          <div class="item events setcard col-md-4">
+          <!-- Continue for headshot9 to headshot15 -->
+          <div class="item headshots col-md-4">
             <div class="card border-0 shadow-lg">
-              <a href="images/portraits/setcard5.jpg" class="image-link">
-                <img src="images/portraits/setcard5.jpg" class="img-fluid rounded" alt="Set Card 5">
+              <a href="images/portraits/headshot9.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot9.jpg" alt="Headshot 9">
+                </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Set Card 5</h5>
+                  <h5 class="card-title">Headshot 3</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Headshot 4 to 15 -->
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot4.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot4.jpg" alt="Headshot 4">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 4</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Headshots Section -->
-          <div class="row headshots gy-4 gx-4">
-
-            <!-- Headshot 1 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot1.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot1.jpg" alt="Headshot 1"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 1</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot5.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot5.jpg" alt="Headshot 5">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 5</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 2 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot2.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot2.jpg" alt="Headshot 2"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 2</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot6.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot6.jpg" alt="Headshot 6">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 6</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 3 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot3.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot3.jpg" alt="Headshot 3"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 3</h5>
-                  </div>
-                </a>
-              </div>
+          <!-- Headshot 1 -->
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot1.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot1.jpg" alt="Headshot 1">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 7</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 4 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot4.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot4.jpg" alt="Headshot 4"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 4</h5>
-                  </div>
-                </a>
-              </div>
+          <!-- Headshot 2 -->
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot2.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot2.jpg" alt="Headshot 2">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 8</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 5 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot5.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot5.jpg" alt="Headshot 5"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 5</h5>
-                  </div>
-                </a>
-              </div>
+          <!-- Headshot 3 -->
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot3.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot3.jpg" alt="Headshot 3">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 9</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 6 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot6.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot6.jpg" alt="Headshot 6"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 6</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot11.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot11.jpg" alt="Headshot 11">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 10</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 7 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot7.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot7.jpg" alt="Headshot 7"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 7</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot13.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot13.jpg" alt="Headshot 13">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 11</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 8 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot8.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot8.jpg" alt="Headshot 8"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 8</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot12.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot12.jpg" alt="Headshot 12">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Headshot 12</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 9 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot9.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot9.jpg" alt="Headshot 9"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 9</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot14.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot14.jpg" alt="Heera Glow Endorsement">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Heera Glow Endorsement</h5>
+                </div>
+              </a>
             </div>
+          </div>
 
-            <!-- Headshot 11 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot11.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot11.jpg" alt="Headshot 11"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 11</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Headshot 12 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot12.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot12.jpg" alt="Headshot 12"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 12</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Headshot 13 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot13.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot13.jpg" alt="Headshot 13"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 13</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Headshot 14 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot14.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot14.jpg" alt="Headshot 14"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 14</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- Headshot 15 -->
-            <div class="item headshots col-md-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/headshot15.jpg" class="image-link">
-                  <div style="position: relative; width: 100%; aspect-ratio: 9 / 16; overflow: hidden;">
-                    <img src="images/portraits/headshot15.jpg" alt="Headshot 15"
-                      style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.375rem;">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Headshot 15</h5>
-                  </div>
-                </a>
-              </div>
+          <div class="item headshots col-md-4">
+            <div class="card border-0 shadow-lg">
+              <a href="images/portraits/headshot15.jpg" class="image-link">
+                <div class="card-img-container">
+                  <img src="images/portraits/headshot15.jpg" alt="Miss U Official Headshot">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Miss U Official Headshot</h5>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </div>
   </section>
 
   <section id="vtr" class="my-5 py-5 px-3 bg-light">
@@ -1689,7 +1784,7 @@
       <!-- Section Header -->
       <div class="text-center mb-5">
         <h4 class="section-title text-uppercase">Testimonials</h4>
-        <h2 class="display-5 fw-semibold">What My Clients Say</h2>
+        <h2 class="display-5 fw-semibold">Clients Feedbacks</h2>
       </div>
 
       <!-- Swiper for testimonial cards -->
@@ -1699,8 +1794,6 @@
           <!-- Testimonial Slide 1 -->
           <div class="swiper-slide">
             <div class="card border-0 shadow-sm p-4 text-center">
-              <img src="./img/testimonial-1.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80"
-                alt="Client 1">
               <p class="fs-5 fst-italic">
                 "Working with Jade has been transformational. Her strategic support as an Executive Virtual Assistant
                 significantly streamlined my operations. Professional, efficient, and truly invaluable!"
@@ -1713,8 +1806,6 @@
           <!-- Testimonial Slide 2 -->
           <div class="swiper-slide">
             <div class="card border-0 shadow-sm p-4 text-center">
-              <img src="./img/testimonial-2.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80"
-                alt="Client 2">
               <p class="fs-5 fst-italic">
                 "As a freelance model, Jade brings a level of professionalism and artistic understanding that is truly
                 rare. A pleasure to collaborate with!"
@@ -1727,13 +1818,11 @@
           <!-- Testimonial Slide 3 -->
           <div class="swiper-slide">
             <div class="card border-0 shadow-sm p-4 text-center">
-              <img src="./img/testimonial-3.jpg" class="rounded-circle mx-auto mb-3" width="80" height="80"
-                alt="Client 3">
               <p class="fs-5 fst-italic">
                 "Jade's hosting skills are exceptional. She commanded the room with grace and energy. Highly recommend
                 her for any event!"
               </p>
-              <h5 class="mt-3 mb-0">Ganda</h5>
+              <h5 class="mt-3 mb-0">Telesforo</h5>
               <span class="text-muted">Event Manager</span>
             </div>
           </div>
@@ -1931,6 +2020,22 @@
       // Set initial visible section
       $(".vtr").show();
       $(".aud").hide();
+    });
+
+    // Filtering logic
+    document.querySelectorAll('.filter-button').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const filter = button.getAttribute('data-filter');
+        const items = document.querySelectorAll('.item');
+
+        items.forEach(function (item) {
+          if (filter === 'all' || item.matches(filter)) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
     });
 
   </script>
