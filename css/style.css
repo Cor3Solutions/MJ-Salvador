@@ -950,4 +950,9 @@ iconify-icon.video-icon:hover {
   padding-right: 10px;
 }
 
- 
+.vtr-item {
+  display: none;
+}
+.vtracting {
+  display: block !important;
+}
