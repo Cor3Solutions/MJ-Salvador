@@ -823,7 +823,7 @@ iconify-icon.video-icon:hover {
   transform: scale(1.05);
 }
 
-.timeline .row {
+/* .timeline .row {
   border-left: 3px solid #ddd;
   margin-left: 20px;
   padding-left: 20px;
