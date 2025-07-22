@@ -956,3 +956,6 @@ iconify-icon.video-icon:hover {
 .vtracting {
   display: block !important;
 }
+.intro-box:hover {
+  background-color: rgba(255, 255, 255, 1); /* solid white on hover */
+}
