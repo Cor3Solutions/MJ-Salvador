@@ -821,25 +821,7 @@ iconify-icon.video-icon:hover {
 }
 .card:hover img {
   transform: scale(1.05);
-}
-
-/* .timeline .row {
-  border-left: 3px solid #ddd;
-  margin-left: 20px;
-  padding-left: 20px;
-  position: relative;
-}
-.timeline .row::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 18px;
-  width: 12px;
-  height: 12px;
-  background-color: #000;
-  border-radius: 50%;
-}
-
+} 
 /* Add padding to the column items (the cards/containers for each video) */
 /* This creates space around the video and its title within each column */
 .vtr-item {
@@ -854,12 +836,7 @@ iconify-icon.video-icon:hover {
   /* Add margin to the bottom to create space between the video and its title */
   margin-bottom: 15px; /* Adjust this value as needed */
 
-  /* Optional: If you find the videos are still too wide even within the padded columns,
-     you can set a max-width here and center them. This will make them smaller than 100%
-     of the column width if the column is very wide. */
-  /* max-width: 300px; */ /* Example: Limit max width of the video container */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+   
 }
 
 .ratio-9x16 iframe {
@@ -867,10 +844,7 @@ iconify-icon.video-icon:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  /* Optional: Add a subtle border or shadow to visually separate the iframe */
-  /* border: 1px solid #eee; */
-  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  height: 100%; 
 }
 
 /* Desktop (default) */
@@ -956,6 +930,41 @@ iconify-icon.video-icon:hover {
 .vtracting {
   display: block !important;
 }
-.intro-box:hover {
-  background-color: rgba(255, 255, 255, 1); /* solid white on hover */
+
+.filter-button,
+.btn-group .btn,
+.dropdown-menu .dropdown-item {
+  cursor: pointer;
+}
+
+.card-img {
+  transition: all 0.4s ease;
+}
+
+.vitals-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  padding: 1rem;
+  backdrop-filter: blur(4px); /* makes background blur */
+}
+
+.card:hover .card-img {
+  filter: blur(3px);
+}
+
+.card:hover .vitals-overlay {
+  opacity: 1;
+}
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 1rem;
+  text-align: center;
 }
