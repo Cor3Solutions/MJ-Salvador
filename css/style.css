@@ -1,24 +1,3 @@
-/*
-Theme Name: Emily - Life Coach and Writer HTML Template
-Theme URI: https://templatesjumgle.com/
-Author: Template Jungle
-Author URI: https://templatejumgle.com/
-Description: Emily is specially designed product packaged for Life Coach and Writer by Templates Jumgle.
-Version: 1.1
-*/
-
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-/*------------------------------------------------
-CSS STRUCTURE:
-
-1. VARIABLES
-2. GENERAL TYPOGRAPHY
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto', sans-serif;
-
---------------------------------------------------------------*/
 body {
   --heading-font: "Playfair Display", serif;
   --heading-font-weight: 400;
@@ -285,187 +264,7 @@ a {
   --bs-pagination-active-bg: var(--bs-primary);
   --bs-pagination-active-border-color: var(--bs-primary);
 }
-
-/** Search Popup
---------------------------------------------------------------*/
-.search-popup {
-  background-color: #fff;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9999;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}
-.search-popup.is-visible {
-  opacity: 1;
-  visibility: visible;
-  cursor: -webkit-image-set(
-      url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23FFF' d='M20 1l-1-1-9 9-9-9-1 1 9 9-9 9 1 1 9-9 9 9 1-1-9-9'/%3E%3C/svg%3E")
-        1x,
-      url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M20 1l-1-1-9 9-9-9-1 1 9 9-9 9 1 1 9-9 9 9 1-1-9-9'/%3E%3C/svg%3E")
-        2x
-    ),
-    pointer;
-  cursor: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23000' d='M20 1l-1-1-9 9-9-9-1 1 9 9-9 9 1 1 9-9 9 9 1-1-9-9'/%3E%3C/svg%3E"),
-    pointer;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-  transition: opacity 0.3s 0s, visibility 0s 0s;
-}
-.search-popup-container {
-  background-color: transparent;
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  padding: 0;
-  width: 90%;
-  max-width: 800px;
-  text-align: center;
-  box-shadow: none;
-  cursor: default;
-  -webkit-transform: translateY(-40px);
-  transform: translateY(-40px);
-  -webkit-backface-visibility: hidden;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.is-visible .search-popup-container {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.search-popup-form {
-  position: relative;
-  margin: 0 0 3em 0;
-}
-.search-popup-form .form-control {
-  padding: 0 0 0.375em 0;
-  font-size: 2em;
-}
-.search-popup-form #search-popup-submit {
-  display: none;
-}
-.search-popup .search-popup-close {
-  display: block;
-  position: absolute;
-  top: 2em;
-  right: 2em;
-  margin: -0.5em;
-  padding: 0.5em;
-  line-height: 0;
-}
-.search-popup .search-popup-close:hover {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.search-popup .search-popup-close i {
-  display: block;
-  position: relative;
-  width: 1em;
-  height: 1em;
-  fill: rgba(0, 0, 0, 0.5);
-}
-.search-popup .search-popup-close:hover i {
-  fill: rgba(0, 0, 0, 1);
-}
-.search-popup .cat-list-title {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  font-size: 0.6em;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.search-popup .cat-list {
-  margin: 0;
-  list-style-type: none;
-}
-.search-popup .cat-list-item {
-  display: inline-block;
-  margin-bottom: 0;
-  letter-spacing: 0.015em;
-  font-size: 2em;
-}
-.search-popup .cat-list-item a {
-  position: relative;
-}
-.search-popup .cat-list-item a::after {
-  background: none repeat scroll 0 0 #fff;
-  content: "";
-  height: 1px;
-  border-bottom: 1px solid #759589;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-  transition: height 0.3s, opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-.search-popup .cat-list-item a:hover::after {
-  height: 1px;
-  opacity: 1;
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px);
-}
-.search-popup .cat-list-item::after {
-  content: "/";
-  padding: 0 5px;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.5);
-  vertical-align: text-top;
-}
-.search-popup .cat-list-item:last-child::after {
-  display: none;
-}
-
-@media only screen and (max-width: 991px) {
-  .search-popup .cat-list-item,
-  .search-popup-form .form-control {
-    font-size: 1.425em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .search-popup .search-popup-close {
-    top: 1em;
-    right: 1em;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .search-popup .cat-list-item,
-  .search-popup-form .form-control {
-    font-size: 1.125em;
-  }
-  .search-popup .search-popup-close {
-    top: 1em;
-    right: 1em;
-  }
-}
-
-.search-popup input[type="search"] {
-  font-size: 24px;
-  height: 60px;
-  padding: 26px;
-}
-.search-popup .search-form button {
-  top: 12px;
-  right: 15px;
-}
-.search-popup .search-form button svg {
-  height: 28px;
-  width: 28px;
-}
-
+ 
 .underline-hover {
   position: relative;
   text-decoration: none;
@@ -506,25 +305,7 @@ a {
   color: #000; /* Slightly darker on hover */
 }
 
-/* Progress Bar */
-.progress-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: transparent;
-  z-index: 1000;
-}
-
-.progress-bar {
-  height: 100%;
-  width: 0;
-  background: #ff0000;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
-  transition: width 0.1s ease;
-}
-
+ 
 /* Fullscreen Overlay */
 .overlay {
   position: fixed;
@@ -668,78 +449,7 @@ a {
     box-shadow: 0 2em 0 0 var(--accent-color);
   }
 }
-
-/* ------ clock ------*/
-#countdown-clock {
-  font-size: 3rem;
-  color: var(--bs-light);
-  display: flex;
-  justify-content: center;
-}
-
-#countdown-clock > .time {
-  border-radius: 10px;
-  padding: 20px;
-  margin-right: 10px;
-}
-
-#countdown-clock .time > span {
-  font-weight: 400;
-}
-
-#countdown-clock .time small {
-  font-size: 1.1875rem;
-  text-transform: uppercase;
-  display: block;
-}
-
-@media screen and (max-width: 465px) {
-  #countdown-clock {
-    font-size: 2rem;
-  }
-
-  #countdown-clock > .time {
-    padding: 10px;
-    margin-right: 2px;
-  }
-
-  #countdown-clock .time small {
-    font-size: 0.8rem;
-  }
-}
-
-/*--------------------------------------------------------------
-Course-Details page style start
---------------------------------------------------------------*/
-.nav-tabs .nav-item {
-  transition: all 0.1s ease-in;
-  border-radius: 0px;
-}
-
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-  color: var(--bs-primary);
-  background-color: transparent;
-  border-color: transparent;
-  border-bottom: 4px solid var(--bs-primary);
-  transition: all 0.1s ease-in;
-}
-
-.nav-tabs .nav-link:focus,
-.nav-tabs .nav-link:hover {
-  color: var(--bs-primary);
-  isolation: isolate;
-  border-color: transparent;
-  border-bottom: 4px solid var(--bs-primary);
-  transition: all 0.1s ease-in;
-}
-
-.table {
-  --bs-table-bg: var(--bs-secondary);
-  border-color: var(--bs-gray);
-}
-
-/*---- video section style start ----*/
+ 
 
 /* color box style */
 div#cboxOverlay {
@@ -821,7 +531,7 @@ iconify-icon.video-icon:hover {
 }
 .card:hover img {
   transform: scale(1.05);
-} 
+}
 /* Add padding to the column items (the cards/containers for each video) */
 /* This creates space around the video and its title within each column */
 .vtr-item {
@@ -835,8 +545,6 @@ iconify-icon.video-icon:hover {
 
   /* Add margin to the bottom to create space between the video and its title */
   margin-bottom: 15px; /* Adjust this value as needed */
-
-   
 }
 
 .ratio-9x16 iframe {
@@ -844,7 +552,7 @@ iconify-icon.video-icon:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 /* Desktop (default) */
@@ -968,3 +676,235 @@ iconify-icon.video-icon:hover {
   border-radius: 1rem;
   text-align: center;
 }
+
+#floatingLogo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#floatingLogo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: #000000;
+  padding: 5px;
+}
+
+/* 📱 Responsive size for mobile */
+@media (max-width: 768px) {
+  #floatingLogo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  #floatingLogo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.swiper-slide .card.small-card {
+  max-width: 250px; /* Adjust this value to control the overall card width */
+  margin: 0 auto; /* Center the card */
+}
+
+.swiper-slide .card-img-container.aspect-9x16 {
+  aspect-ratio: 9 / 16;
+  position: relative;
+  overflow: hidden; /* This is crucial for cropping */
+}
+
+.swiper-slide .card-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Reduce the font size of the card title for a cleaner look */
+.swiper-slide .card-title {
+  font-size: 1.1rem;
+}
+.card-img-container {
+    height: 400px; /* Adjust this value to your liking */
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navbar-center-logo {
+  /* Position relative to the parent navbar */
+  position: absolute;
+  /* Move to the horizontal center of the parent */
+  left: 50%;
+  /* Shift back to the left by half of the logo's own width */
+  transform: translateX(-50%);
+}
+
+/* 1. Make the swiper-slide container a flex container */
+.swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+/* 2. Make the card fill the full height of the slide and set a consistent min-height */
+.card {
+    height: 100%;
+    min-height: 550px; /* Adjust this value as needed to fit your content */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Ensure the image container has a fixed height for consistency */
+.card-img-container {
+    height: 400px; /* Keep this the same as before */
+    overflow: hidden;
+}
+
+/* 4. Use object-fit to prevent image distortion */
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 5. Allow the card-body to grow and fill the remaining vertical space */
+.card-body {
+    flex-grow: 1;
+}
+
+.vogue-style {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem; /* Adjust this value to control the size */
+    font-weight: 500;  /* This makes the letters bold */
+    letter-spacing: 0.2em; /* This spaces out the letters */
+    text-transform: uppercase; /* Ensures all letters are capitalized */
+}
+
+/* 1. Ensure swiper-slide acts as a flexible container */
+.swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+/* 2. Make all cards the same height and a flex container */
+.card {
+    height: 100%;
+    min-height: 550px; /* Adjust this value to your liking */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Give the image container a fixed height and control cropping */
+.card-img-container {
+    height: 500px; /* Consistent height for all images */
+    overflow: hidden;
+}
+
+/* 4. The key fix for image cropping is object-position */
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* This is the fix: ensures the top of the image is always visible */
+}
+
+/* 5. Make the card body stretch to fill remaining space */
+.card-body {
+    flex-grow: 1;
+}
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(56, 136, 228, 0.9), rgba(0, 0, 0, 0.2));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 60px 0;
+  transition: 0.5s;
+}
+
+.bg-breadcrumb .breadcrumb {
+  position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+  color: var(--bs-white);
+}
+/*** Single Page Hero Header End ***/
+
+.testimonial-card {
+    position: relative;
+    padding-top: 50px; /* Add space for the top elements */
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    height: 100%; /* Ensures all cards are the same height */
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.testimonial-card .quote-icon {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--bs-light); /* You can change this color */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+
+/* Optional: improve Swiper's look */
+.testimonialSwiper {
+    padding-bottom: 50px;
+}
+
+/* 1. Make all Swiper slides flexible containers */
+.testimonialSwiper .swiper-slide {
+    height: auto; /* Allows slides to adapt */
+    display: flex; /* Makes slides a flex container */
+    flex-direction: column; /* Stacks children vertically */
+}
+
+/* 2. Make the testimonial card fill the full height of the slide */
+.testimonial-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between elements */
+}
+
+/* 3. Make the paragraph content grow to fill the available space */
+.testimonial-card p {
+    flex-grow: 1;
+}
+
+ 

@@ -20,7 +20,6 @@
   <meta property="og:url" content="https://mj-salvador.vercel.app/">
   <meta property="og:type" content="website">
 
-
   <!-- SEO Meta -->
   <meta name="author" content="author">
   <meta name="keywords" content="keywords">
@@ -42,8 +41,11 @@
   <!-- Custom Vendor + Style CSS -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/script.js"> 
-  
+  <link rel="stylesheet" href="js/script.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
   <!-- Google Fonts (Bodoni + Playfair + Roboto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,114 +53,78 @@
     href="https://fonts.googleapis.com/css2?family=Licorice&family=Playfair+Display:ital,wght@0,400;1,700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&display=swap" rel="stylesheet">
-
-  <!-- Vogue Style Logo -->
-  <style>
-    .vogue-logo {
-      font-family: 'Bodoni Moda', serif;
-      font-size: 2rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #000;
-    }
-  </style>
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg bg-white text-uppercase fs-6 p-3">
-    <div class="container-fluid">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-      <div class="d-flex align-items-center">
+  <style>
+    .social-icon {
+      color: #808080;
+      /* Gray color */
+      transition: color 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #ff69b4;
+      /* Hot pink on hover */
+    }
+  </style>
+  <nav class="navbar fixed-top navbar-expand-lg bg-white text-uppercase fs-6 p-3">
+    <div class="container-fluid d-flex justify-content-center">
+
+      <div class="d-flex align-items-center me-auto">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-
           <div class="offcanvas-body">
             <ul class="navbar-nav gap-1">
-              <li class="nav-item"><a class="nav-link" href="#vtr">Video Recordings</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portraits-section">Portraits</a></li>
+              <li class="nav-item"><a class="nav-link" href="portraits.html">Portraits</a></li>
+              <li class="nav-item"><a class="nav-link" href="vtr.html">Video Recordings</a></li>
             </ul>
-
             <div class="d-lg-none d-flex justify-content-center mt-4">
-              <a href="https://www.facebook.com/jaddengg" target="_blank" class="mx-2">
-                <svg width="30" height="30">
-                  <use xlink:href="#facebook"></use>
-                </svg>
+              <a href="https://www.facebook.com/jaddengg" target="_blank" class="mx-2 social-icon">
+                <i class="bi bi-facebook fs-4"></i>
               </a>
-              <a href="https://www.instagram.com/jadengsalvador" target="_blank" class="mx-2">
-                <svg width="30" height="30">
-                  <use xlink:href="#instagram"></use>
-                </svg>
+              <a href="https://www.instagram.com/jadengsalvador" target="_blank" class="mx-2 social-icon">
+                <i class="bi bi-instagram fs-4"></i>
               </a>
-              <a href="https://www.tiktok.com/@jaddengg" target="_blank" class="mx-2">
-                <svg width="30" height="30" fill="currentColor">
-                  <use xlink:href="#tiktok"></use>
-                </svg>
+              <a href="https://www.tiktok.com/@jaddengg" target="_blank" class="mx-2 social-icon">
+                <i class="bi bi-tiktok fs-4"></i>
               </a>
-              <a href="https://www.linkedin.com/in/mareljade-salvador-930665294/" target="_blank" class="mx-2">
-                <svg width="30" height="30" fill="currentColor">
-                  <use xlink:href="#linkedin"></use>
-                </svg>
+              <a href="https://www.linkedin.com/in/mareljade-salvador-930665294/" target="_blank"
+                class="mx-2 social-icon">
+                <i class="bi bi-linkedin fs-4"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <a class="navbar-brand vogue-logo me-auto ms-auto" href="index.html">Jade S.</a>
+      <a class="navbar-brand navbar-center-logo vogue-style" href="index.html"> JADE S. </a>
 
-      <div class="d-none d-lg-flex align-items-center">
-        <a href="https://www.facebook.com/jaddengg" target="_blank" class="mx-2">
-          <svg width="30" height="30">
-            <use xlink:href="#facebook"></use>
-          </svg>
+      <div class="d-none d-lg-flex align-items-center ms-auto">
+        <a href="https://www.facebook.com/jaddengg" target="_blank" class="mx-2 social-icon">
+          <i class="bi bi-facebook fs-4"></i>
         </a>
-        <a href="https://www.instagram.com/jadengsalvador" target="_blank" class="mx-2">
-          <svg width="30" height="30">
-            <use xlink:href="#instagram"></use>
-          </svg>
+        <a href="https://www.instagram.com/jadengsalvador" target="_blank" class="mx-2 social-icon">
+          <i class="bi bi-instagram fs-4"></i>
         </a>
-        <a href="https://www.tiktok.com/@jaddengg" target="_blank" class="mx-2">
-          <svg width="30" height="30" fill="currentColor">
-            <use xlink:href="#tiktok"></use>
-          </svg>
+        <a href="https://www.tiktok.com/@jaddengg" target="_blank" class="mx-2 social-icon">
+          <i class="bi bi-tiktok fs-4"></i>
         </a>
-        <a href="https://www.linkedin.com/in/mareljade-salvador-930665294/" target="_blank" class="mx-2">
-          <svg width="30" height="30" fill="currentColor">
-            <use xlink:href="#linkedin"></use>
-          </svg>
+        <a href="https://www.linkedin.com/in/mareljade-salvador-930665294/" target="_blank" class="mx-2 social-icon">
+          <i class="bi bi-linkedin fs-4"></i>
         </a>
       </div>
     </div>
   </nav>
-
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="facebook" viewBox="0 0 40 40">
-      <path
-        d="M25.199 8.86688H28.3323V3.56688C26.8152 3.40912 25.2909 3.33124 23.7656 3.33355C19.2323 3.33355 16.1323 6.10021 16.1323 11.1669V15.5335H11.0156V21.4669H16.1323V36.6669H22.2656V21.4669H27.3656L28.1323 15.5335H22.2656V11.7502C22.2656 10.0002 22.7323 8.86688 25.199 8.86688Z"
-        fill="currentColor" />
-    </symbol>
-    <symbol id="instagram" viewBox="0 0 40 40">
-      <path
-        d="M28.8997 9.10016C28.5041 9.10016 28.1174 9.21746 27.7885 9.43722C27.4596 9.65699 27.2033 9.96934 27.0519 10.3348C26.9005 10.7002 26.8609 11.1024 26.9381 11.4903C27.0153 11.8783 27.2058 12.2347 27.4855 12.5144C27.7652 12.7941 28.1215 12.9846 28.5095 13.0617C28.8975 13.1389 29.2996 13.0993 29.665 12.9479C30.0305 12.7965 30.3428 12.5402 30.5626 12.2113C30.7824 11.8824 30.8997 11.4957 30.8997 11.1002C30.8997 10.5697 30.689 10.061 30.3139 9.68595C29.9388 9.31088 29.4301 9.10016 28.8997 9.10016ZM36.5663 13.1335C36.5339 11.7507 36.2749 10.3825 35.7997 9.0835C35.3759 7.97205 34.7163 6.96563 33.8663 6.1335C33.041 5.27921 32.0323 4.62379 30.9163 4.21683C29.6208 3.7271 28.2511 3.46218 26.8663 3.4335C25.0997 3.3335 24.533 3.3335 19.9997 3.3335C15.4663 3.3335 14.8997 3.3335 13.133 3.4335C11.7483 3.46218 10.3786 3.7271 9.08301 4.21683C7.96913 4.62791 6.96123 5.28276 6.13301 6.1335C5.27872 6.95879 4.6233 7.96756 4.21634 9.0835C3.72661 10.3791 3.46169 11.7487 3.43301 13.1335C3.33301 14.9002 3.33301 15.4668 3.33301 20.0002C3.33301 24.5335 3.33301 25.1002 3.43301 26.8668C3.46169 28.2516 3.72661 29.6213 4.21634 30.9168C4.6233 32.0328 5.27872 33.0415 6.13301 33.8668C6.96123 34.7176 7.96913 35.3724 9.08301 35.7835C10.3786 36.2732 11.7483 36.5381 13.133 36.5668C14.8997 36.6668 15.4663 36.6668 19.9997 36.6668C24.533 36.6668 25.0997 36.6668 26.8663 36.5668C28.2511 36.5381 29.6208 36.2732 30.9163 35.7835C32.0323 35.3765 33.041 34.7211 33.8663 33.8668C34.7201 33.0378 35.3802 32.0305 35.7997 30.9168C36.2749 29.6178 36.5339 28.2497 36.5663 26.8668C36.5663 25.1002 36.6663 24.5335 36.6663 20.0002C36.6663 15.4668 36.6663 14.9002 36.5663 13.1335ZM33.5663 26.6668C33.5542 27.7248 33.3626 28.773 32.9997 29.7668C32.7336 30.4922 32.3061 31.1475 31.7497 31.6835C31.2091 32.2343 30.555 32.6609 29.833 32.9335C28.8392 33.2964 27.791 33.488 26.733 33.5002C25.0663 33.5835 24.4497 33.6002 20.0663 33.6002C15.683 33.6002 15.0663 33.6002 13.3997 33.5002C12.3012 33.5207 11.2073 33.3516 10.1663 33.0002C9.47598 32.7136 8.85193 32.2881 8.33301 31.7502C7.77982 31.2147 7.35775 30.5588 7.09967 29.8335C6.69277 28.8254 6.46708 27.7534 6.43301 26.6668C6.43301 25.0002 6.33301 24.3835 6.33301 20.0002C6.33301 15.6168 6.33301 15.0002 6.43301 13.3335C6.44048 12.2519 6.63792 11.1801 7.01634 10.1668C7.30975 9.46335 7.76012 8.83626 8.33301 8.3335C8.83936 7.76044 9.46515 7.30532 10.1663 7.00016C11.1823 6.63357 12.253 6.44196 13.333 6.4335C14.9997 6.4335 15.6163 6.3335 19.9997 6.3335C24.383 6.3335 24.9997 6.3335 26.6663 6.4335C27.7243 6.44563 28.7725 6.63724 29.7663 7.00016C30.5237 7.28125 31.2035 7.73824 31.7497 8.3335C32.2958 8.84546 32.7226 9.47138 32.9997 10.1668C33.3701 11.1817 33.5618 12.2531 33.5663 13.3335C33.6497 15.0002 33.6663 15.6168 33.6663 20.0002C33.6663 24.3835 33.6497 25.0002 33.5663 26.6668ZM19.9997 11.4502C18.3094 11.4535 16.6579 11.9577 15.2541 12.8992C13.8503 13.8407 12.757 15.1772 12.1124 16.7398C11.4678 18.3023 11.3009 20.0209 11.6327 21.6784C11.9644 23.3358 12.7801 24.8577 13.9765 26.0518C15.1729 27.2459 16.6964 28.0585 18.3544 28.3871C20.0125 28.7156 21.7308 28.5453 23.2921 27.8977C24.8535 27.2501 26.1878 26.1542 27.1266 24.7486C28.0653 23.3429 28.5663 21.6905 28.5663 20.0002C28.5685 18.8753 28.3483 17.7612 27.9184 16.7218C27.4885 15.6823 26.8573 14.7382 26.0611 13.9436C25.265 13.149 24.3196 12.5196 23.2793 12.0917C22.2391 11.6638 21.1245 11.4458 19.9997 11.4502ZM19.9997 25.5502C18.902 25.5502 17.829 25.2247 16.9163 24.6148C16.0036 24.005 15.2922 23.1382 14.8721 22.1241C14.4521 21.1099 14.3422 19.994 14.5563 18.9174C14.7705 17.8408 15.299 16.8519 16.0752 16.0757C16.8514 15.2995 17.8403 14.771 18.9169 14.5568C19.9935 14.3427 21.1094 14.4526 22.1236 14.8726C23.1377 15.2927 24.0045 16.0041 24.6143 16.9167C25.2242 17.8294 25.5497 18.9025 25.5497 20.0002C25.5497 20.729 25.4061 21.4507 25.1272 22.1241C24.8483 22.7974 24.4395 23.4092 23.9241 23.9246C23.4088 24.44 22.7969 24.8488 22.1236 25.1277C21.4502 25.4066 20.7285 25.5502 19.9997 25.5502Z"
-        fill="currentColor" />
-    </symbol>
-    <symbol id="tiktok" viewBox="0 0 24 24">
-      <path
-        d="M9.75 3v12.75a3 3 0 1 1-3-3h.75v-3H6.75a6 6 0 1 0 6 6V6.75a3.75 3.75 0 0 0 3.75 3.75V6.75A3.75 3.75 0 0 1 13.5 3h-3.75z" />
-    </symbol>
-    <symbol id="linkedin" viewBox="0 0 24 24">
-      <path
-        d="M20.447 20.452h-3.554v-5.569c0-1.325-.028-3.044-1.852-3.044-1.853 0-2.136 1.445-2.136 2.934v5.679H9.104V9.729h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 6.879v7.016zM5.233 7.747c-1.745 0-3.155-1.408-3.155-3.153 0-1.745 1.41-3.156 3.155-3.156s3.155 1.411 3.155 3.156c0 1.745-1.41 3.153-3.155 3.153zm3.585 12.705H1.67V9.729h3.585v10.723z" />
-    </symbol>
-  </svg>
 
   <!-- Banner Section -->
   <section class="banner-section position-relative text-center py-5">
@@ -166,10 +132,9 @@
     <div class="main-banner swiper">
       <div class="swiper-wrapper">
 
-        <!-- Slide 1: Image -->
         <div class="swiper-slide">
           <div class="fixed-slide">
-            <img src="images/SWIPE/missu.jpg" alt="Slide 1">
+            <img src="images/SWIPE/3.1.png" alt="Slide 8">
           </div>
         </div>
 
@@ -190,6 +155,12 @@
           </div>
         </div>
 
+        <div class="swiper-slide">
+          <div class="fixed-slide">
+            <img src="images/SWIPE/2nd.png" alt="Slide 3">
+          </div>
+        </div>
+
         <!-- Slide 4: Video -->
         <div class="swiper-slide">
           <div class="fixed-slide">
@@ -200,10 +171,23 @@
           </div>
         </div>
 
+        <!-- Slide 1: Image -->
+        <div class="swiper-slide">
+          <div class="fixed-slide">
+            <img src="images/SWIPE/missu.png" alt="Slide 1">
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="fixed-slide">
+            <img src="images/SWIPE/3.2.png" alt="Slide 6">
+          </div>
+        </div>
+
         <!-- Slide 5: Image -->
         <div class="swiper-slide">
           <div class="fixed-slide">
-            <img src="images/SWIPE/member-05.jpg" alt="Slide 5">
+            <img src="images/SWIPE/1st.png" alt="Slide 5">
           </div>
         </div>
 
@@ -217,12 +201,19 @@
           </div>
         </div>
 
+        <div class="swiper-slide">
+          <div class="fixed-slide">
+            <img src="images/SWIPE/3rd.png" alt="Slide 5">
+          </div>
+        </div>
+
         <!-- Slide 7: Image -->
         <div class="swiper-slide">
           <div class="fixed-slide">
             <img src="images/SWIPE/heera.jpg" alt="Slide 8">
           </div>
         </div>
+
         <div class="swiper-slide">
           <div class="fixed-slide">
             <video autoplay muted loop playsinline>
@@ -231,6 +222,13 @@
             </video>
           </div>
         </div>
+
+        <div class="swiper-slide">
+          <div class="fixed-slide">
+            <img src="images/SWIPE/1.1.png" alt="Slide 5">
+          </div>
+        </div>
+
         <div class="swiper-slide">
           <div class="fixed-slide">
             <img src="images/SWIPE/littlesweets.jpg" alt="Slide 6">
@@ -245,6 +243,8 @@
             </video>
           </div>
         </div>
+
+
       </div>
     </div>
 
@@ -252,15 +252,15 @@
     <div class="intro-box col-lg-5 p-5 bg-white bg-opacity-75 text-black rounded-4 shadow-sm"
       style="transition: all 0.3s ease;">
       <h3 class="display-4 mb-3 text-black" style="font-size: 2rem;">
-        Executive Virtual Assistant <br>Freelance Model <br> Host
+        Executive Virtual Assistant <br>Freelance Model
       </h3>
       <p class="fs-6 text-black">
-        Whether you need precise administrative support to streamline your operations, a captivating visual presence to
-        elevate your brand, or dynamic charisma to bring your event to life, I am dedicated to delivering professional
-        excellence across every role. Let's collaborate to transform your vision into reality.
+        Behind the camera organization to striking visuals on stage and ramp, I bring your vision come alive with style
+        and energy that elevate every project. Aiming to blend professionalism with creativity aiding fashion brands and
+        events bring their creativity to reality.
       </p>
       <a href="https://www.facebook.com/jaddengg" target="_blank" class="btn btn-primary p-3 mt-2 w-100 rounded-2">
-        Contact me!
+        Let's collaborate!
       </a>
     </div>
 
@@ -273,10 +273,16 @@
         <h4 class="display-5 fw-semibold" style="color: #000;"><br>Experiences</h4>
         <p style="color: #777;">Get to know more about my journey, roles, and the passion I bring to every project.</p>
 
-        <!-- Download CV Button -->
-        <a href="images/jadecv2025.pdf" class="btn btn-outline-dark btn-sm mt-2" download>
-          Download CV
-        </a>
+        <!-- Download CV Buttons Side by Side -->
+        <div class="d-flex justify-content-center gap-2 mt-2">
+          <a href="images/EVA_SALVADOR.pdf" class="btn btn-outline-dark btn-sm" download>
+            CV – Executive VA
+          </a>
+          <a href="images/MODELING_SALVADOR.pdf" class="btn btn-outline-dark btn-sm" download>
+            CV – Modeling
+          </a>
+        </div>
+
       </div>
 
       <div class="row mb-5">
@@ -474,235 +480,18 @@
   </section>
 
   <!-- Gallery -->
-  <section id="portraits-section" class="my-5 py-5 bg-text">
+  <section class="my-5 py-5 bg-text">
     <div class="container">
 
-      <!-- Section header: title and subtitle -->
       <div class="text-center pt-4 mt-4">
         <span class="text-muted text-uppercase">Keeping you on the loop</span>
         <h4 class="display-5 fw-normal mt-2">Gallery Overview</h4>
       </div>
 
-      <!-- Filter buttons for portrait categories -->
-      <div class="text-center my-4">
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-          <!-- All Button -->
-          <button class="filter-button btn btn-outline-dark" data-filter=".muph">All</button>
+      <div class="swiper mySwiper mt-4">
+        <div class="swiper-wrapper">
 
-          <!-- Gym Dropdown -->
-          <div class="dropdown">
-            <button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Gym
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item filter-button" data-filter=".boxing">MMA</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".gymoutfits">Gym Outfits</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".weightlifting">Weight Lifting</a></li>
-            </ul>
-          </div>
-
-          <!-- Events Dropdown -->
-          <div class="dropdown">
-            <button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Events
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item filter-button" data-filter=".tnap">TNAP</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".suysing">Suysing</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".ritemed">RiteMed</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".metaace">Meta Ace</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".southdrug">Southdrug</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".lemon">Lemon Dou</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".manginasal">Mang Inasal</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".bida">Bida S2 Netflix</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".pcp">PCP Convention</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".muph">MUPH - Batangas</a></li>
-              <li><a class="dropdown-item filter-button" data-filter=".cifaw">Calgary International Fashion & Arts
-                  Week</a></li>
-            </ul>
-          </div>
-
-          <!-- Set Card Button -->
-          <button class="filter-button btn btn-outline-dark" data-filter=".setcard">Set Cards</button>
-
-          <!-- Headshots Button -->
-          <button class="filter-button btn btn-outline-dark" data-filter=".headshots">Head Shots</button>
-        </div>
-      </div> 
-
-      <!-- Scrollable grid wrapper -->
-      <div class="portrait-scrollbox">
-        <div class="isotope-container row g-4">
-
-          <!-- Flowy Close-Up -->
-          <div class="item events muph col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph1.png"
-                data-img-alt="Flowy Close-Up">
-                <div class="card-img-container">
-                  <img src="images/portraits/muph1.png" alt="Flowy Close-Up" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Flowy Close-Up</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Flowy Dress Shot -->
-          <div class="item events muph col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph2.png"
-                data-img-alt="Flowy Dress Shot">
-                <div class="card-img-container">
-                  <img src="images/portraits/muph2.png" alt="Flowy Dress Shot" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Flowy Dress Shot</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Just Pause Salon -->
-          <div class="item events muph col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/muph3.jpg" data-img-alt="Just Pause Shot">
-                <div class="card-img-container">
-                  <img src="images/portraits/muph3.jpg" alt="Just Pause Shot" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Just Pause Salon</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Sashing Moment -->
-          <div class="item events muph col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/muph4.png" data-img-alt="Sashing Moment">
-                <div class="card-img-container">
-                  <img src="images/portraits/muph4.png" alt="Sashing Moment" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Sashing Moment</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Evening Gown Pose -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/muph5.jpg" data-img-alt="Evening Gown Pose 3">
-                <div class="card-img-container">
-                  <img src="images/portraits/muph5.jpg" alt="Evening Gown Pose 3" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Evening Gown Pose</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Preliminary Swimwear -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/missu3.png"
-                data-img-alt="Miss U Pose 3">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu3.png" alt="Miss U Pose 3" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Preliminary Swimwear</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Graffiti Outfit -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/missu4.png"
-                data-img-alt="Miss U Pose 4">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu4.png" alt="Miss U Pose 4" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Graffiti Outfit</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Preliminary Swimwear -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/missu6.png"
-                data-img-alt="Miss U Pose 6">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu6.png" alt="Miss U Pose 6" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Preliminary Swimwear</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Swimwear Challenge -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/missu7.png"
-                data-img-alt="Miss U Pose 7">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu7.png" alt="Miss U Pose 7" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Swimwear Challenge</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Lake O' Cali Moments -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/missu11.jpg" data-img-alt="Miss U Pose 11">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu11.jpg" alt="Miss U Pose 11" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Lake O' Cali Moments</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- 747 -->
-          <div class="item events muph col-md-4 mb-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/missu12.png" data-img-alt="Miss U Pose 12">
-                <div class="card-img-container">
-                  <img src="images/portraits/missu12.png" alt="Miss U Pose 12" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">747</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Miss U – Heera Glow -->
-          <div class="item events muph col-md-4 mb-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
               <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
                 data-img-src="images/portraits/missu13.jpg" data-img-alt="Miss U Pose 13">
@@ -716,962 +505,140 @@
             </div>
           </div>
 
-          <!-- Miss U – Little Sweets -->
-          <div class="item events muph col-md-4 mb-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/missu14.jpg" data-img-alt="Miss U Pose 14">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph2.png"
+                data-img-alt="Flowy Dress Shot">
                 <div class="card-img-container">
-                  <img src="images/portraits/missu14.jpg" alt="Miss U Pose 14" class="img-fluid rounded">
+                  <img src="images/portraits/muph2.png" alt="Flowy Dress Shot" class="img-fluid rounded">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Little Sweets</h5>
+                  <h5 class="card-title">Flowy Dress Shot</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Headshot 7 -->
-          <div class="item headshots col-md-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot7.jpg" data-img-alt="Headshot 7">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph3.jpg"
+                data-img-alt="Just Pause Shot">
                 <div class="card-img-container">
-                  <img src="images/portraits/headshot7.jpg" alt="Headshot 7" class="img-fluid rounded">
+                  <img src="images/portraits/muph3.jpg" alt="Just Pause Shot" class="img-fluid rounded">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 1</h5>
+                  <h5 class="card-title">Just Pause Salon</h5>
                 </div>
               </a>
             </div>
           </div>
 
-
-          <!-- Headshot 8 -->
-          <div class="item headshots col-md-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot8.jpg" data-img-alt="Headshot 8">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph4.png"
+                data-img-alt="Sashing Moment">
                 <div class="card-img-container">
-                  <img src="images/portraits/headshot8.jpg" alt="Headshot 8" class="img-fluid rounded">
+                  <img src="images/portraits/muph4.png" alt="Sashing Moment" class="img-fluid rounded">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 2</h5>
+                  <h5 class="card-title">Sashing Moment</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Headshot 4 -->
-          <div class="item headshots col-md-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot4.jpg" data-img-alt="Headshot 4">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/muph5.jpg"
+                data-img-alt="Evening Gown Pose 3">
                 <div class="card-img-container">
-                  <img src="images/portraits/headshot4.jpg" alt="Headshot 4" class="img-fluid rounded">
+                  <img src="images/portraits/muph5.jpg" alt="Evening Gown Pose 3" class="img-fluid rounded">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 4</h5>
+                  <h5 class="card-title">Evening Gown Pose</h5>
                 </div>
               </a>
             </div>
           </div>
 
-          <!-- Headshot 6 -->
-          <div class="item headshots col-md-4">
+          <div class="swiper-slide">
             <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot6.jpg" data-img-alt="Headshot 6">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/missu3.png"
+                data-img-alt="Miss U Pose 3">
                 <div class="card-img-container">
-                  <img src="images/portraits/headshot6.jpg" alt="Headshot 6" class="img-fluid rounded">
+                  <img src="images/portraits/missu3.png" alt="Miss U Pose 3" class="img-fluid rounded">
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 6</h5>
+                  <h5 class="card-title">Preliminary Swimwear</h5>
                 </div>
               </a>
             </div>
           </div>
 
-
-          <!-- Headshot 1 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot1.jpg" data-img-alt="Headshot 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot1.jpg" alt="Headshot 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 7</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Headshot 2 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot2.jpg" data-img-alt="Headshot 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot2.jpg" alt="Headshot 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 8</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Headshot 11 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot11.jpg" data-img-alt="Headshot 11">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot11.jpg" alt="Headshot 11" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 10</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Headshot 13 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot13.jpg" data-img-alt="Headshot 13">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot13.jpg" alt="Headshot 13" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Headshot 11</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Headshot 14 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot14.jpg" data-img-alt="Heera Glow Endorsement">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot14.jpg" alt="Heera Glow Endorsement" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Heera Glow Endorsement</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Headshot 15 -->
-          <div class="item headshots col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/headshot15.jpg" data-img-alt="Miss U Official Headshot">
-                <div class="card-img-container">
-                  <img src="images/portraits/headshot15.jpg" alt="Miss U Official Headshot" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Miss U Official Headshot</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Southdrug Event Video (YouTube Shorts) -->
-          asd <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/MyjfEfXIQlA" title="Southdrug Event Video" frameborder="0"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Southdrug – Event Video</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Southdrug Event Sample 1 -->
-          <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/southdrug1.png" data-img-alt="Southdrug Event 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/southdrug1.png" alt="Southdrug Event 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Southdrug Booth – Product Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Southdrug Event Sample 2 -->
-          <div class="item events southdrug col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/southdrug2.png" data-img-alt="Southdrug Event 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/southdrug2.png" alt="Southdrug Event 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Customer Engagement – Product Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- RiteMed Event Video -->
-          asd <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/cWsAzrK0iEA" title="RiteMed Event Video" frameborder="0"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">RiteMed Booth Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- RiteMed Event Photo 1 -->
-          <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/RITEMED1.jpg" data-img-alt="RiteMed Event 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/RITEMED1.jpg" alt="RiteMed Event 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">RiteMed Event Place</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- RiteMed Event Photo 2 -->
-          <div class="item events ritemed col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/RITEMED2.jpg" data-img-alt="RiteMed Event 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/RITEMED2.jpg" alt="RiteMed Event 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">RiteMed Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Mang Inasal Event Video -->
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/6vyNM0-lsEA" title="Mang Inasal Highlights" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Mang Inasal Event Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mang Inasal Photo 1 -->
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/inasal1.png" data-img-alt="Mang Inasal Event 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/inasal1.png" alt="Mang Inasal Event 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Mang Inasal Photo 2 -->
-          <div class="item events manginasal col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/inasal2.jpg" data-img-alt="Mang Inasal Event 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/inasal2.jpg" alt="Mang Inasal Event 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Mang Inasal – Brand Sampling Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- PCP Convention Video -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/Trwp6uVhywc" title="PCP Convention Video" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">PCP Convention Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- PCP Convention Photo 1 -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/pcp1.jpg"
-                data-img-alt="PCP Convention 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/pcp1.jpg" alt="PCP Convention 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">PCP Convention – Day 1</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- PCP Convention Photo 2 -->
-          <div class="item events pcp col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/pcp2.jpg"
-                data-img-alt="PCP Convention 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/pcp2.jpg" alt="PCP Convention 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">PCP Convention – Day 2</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          asd <!-- TNAP Event Video -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/LMM2mNkPH3g" title="TNAP Event Video" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">TNAP Event Highlights</h5>
-              </div>
-            </div>
-          </div>
-          <!-- TNAP Photo 1 -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/tnap1.png"
-                data-img-alt="TNAP Photo 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/tnap1.png" alt="TNAP Photo 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">TNAP – Hosting</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- TNAP Photo 2 -->
-          <div class="item events tnap col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/tnap2.png"
-                data-img-alt="TNAP Photo 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/tnap2.png" alt="TNAP Photo 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">TNAP – Group Team</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Suysing Photo 1 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/suysing2.jpg" data-img-alt="Suysing Event 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing2.jpg" alt="Suysing Event 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Suysing</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Suysing Photo 2 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/suysing1.jpg" data-img-alt="Suysing Event 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing1.jpg" alt="Suysing Event 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Product</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Suysing Photo 3 -->
-          <div class="item events suysing col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal"
-                data-img-src="images/portraits/suysing3.jpg" data-img-alt="Suysing Event 3">
-                <div class="card-img-container">
-                  <img src="images/portraits/suysing3.jpg" alt="Suysing Event 3" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- CIFAW Event Video (Thumbnail with Play Icon) -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="https://www.youtube.com/watch?v=WsnyO5IYLDU" target="_blank">
-                <div class="card-img-container position-relative">
-                  <img src="images/portraits/cifawthumb.png" alt="CIFAW Video Thumbnail" class="img-fluid rounded">
-                  <!-- Play Icon Overlay -->
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white"
-                      class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.271 5.055a.5.5 0 0 0-.771.424v5.042a.5.5 0 0 0 .771.424l4.388-2.521a.5.5 0 0 0 0-.848L6.27 5.055z" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">CIFAW Highlights</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- CIFAW Photo 1 (with Modal) -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/cifaw1.png"
-                data-img-alt="CIFAW Photo 1">
-                <div class="card-img-container">
-                  <img src="images/portraits/cifaw1.png" alt="CIFAW Photo 1" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Official Posting – CIFAW</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- CIFAW Photo 2 (with Modal) -->
-          <div class="item events cifaw col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/cifaw2.jpg"
-                data-img-alt="CIFAW Photo 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/cifaw2.jpg" alt="CIFAW Photo 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">CIFAW</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          asd <!-- Lemon Dou -->
-          <div class="item events lemon col-md-4">
-            <div class="card border-0 shadow-lg">
-              <div class="ratio ratio-9x16">
-                <iframe src="https://www.youtube.com/embed/AAmZJEbIP_4" title="Lemon Dou Highlights" frameborder="0"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Lemon Dou Highlights</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lemon Dou - Fit Check (with Modal) -->
-          <div class="item events lemon col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/lemon1.png"
-                data-img-alt="Lemon Dou - Fit Check">
-                <div class="card-img-container">
-                  <img src="images/portraits/lemon1.png" alt="Lemon Dou - Fit Check" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Lemon Dou - Fit Check</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Lemon Dou - Booth -->
-          <div class="item events lemon col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/lemon3.png"
-                data-img-alt="Lemon Dou - Booth">
-                <div class="card-img-container">
-                  <img src="images/portraits/lemon3.png" alt="Lemon Dou - Booth" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Lemon Dou - Booth</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Meta Ace Event Video (Thumbnail with Play Icon) -->
-          <div class="item events metaace col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="https://www.youtube.com/watch?v=u0YFKUuWyhs" target="_blank" rel="noopener noreferrer">
-                <div class="card-img-container position-relative">
-                  <img src="images/portraits/metaace-video-thumb.jpg" alt="Meta Ace Event Video Thumbnail"
-                    class="img-fluid rounded">
-                  <!-- Play Icon Overlay -->
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white"
-                      class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.271 5.055a.5.5 0 0 0-.771.424v5.042a.5.5 0 0 0 .771.424l4.388-2.521a.5.5 0 0 0 0-.848L6.27 5.055z" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Meta Ace Highlights</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Meta Ace Photo 2 -->
-          <div class="item events metaace col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/meta2.jpg"
-                data-img-alt="Meta Ace Photo 2">
-                <div class="card-img-container">
-                  <img src="images/portraits/meta2.jpg" alt="Meta Ace Photo 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Meta Ace - Co Models</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Bida S2 Netflix Video (Thumbnail with Play Icon) -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="https://www.youtube.com/watch?v=7UvuYB1-C-k" target="_blank" rel="noopener noreferrer">
-                <div class="card-img-container position-relative">
-                  <img src="images/portraits/bidathumb.jpg" alt="Bida S2 Netflix Video Thumbnail"
-                    class="img-fluid rounded">
-                  <!-- Play Icon Overlay -->
-                  <div class="position-absolute top-50 start-50 translate-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="white"
-                      class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.271 5.055a.5.5 0 0 0-.771.424v5.042a.5.5 0 0 0 .771.424l4.388-2.521a.5.5 0 0 0 0-.848L6.27 5.055z" />
-                    </svg>
-                  </div>
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Bida S2 Netflix Highlights</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Bida Photo 2 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/bida2.jpg"
-                data-img-alt="Bida S2 Netflix Photo 2 – with Lovi Poe">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida2.jpg" alt="Bida S2 Netflix Photo 2" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Behind the Scenes – with Lovi Poe</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Bida Photo 3 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/bida3.jpg"
-                data-img-alt="Bida S2 Netflix Photo 3">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida3.jpg" alt="Bida S2 Netflix Photo 3" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Bida S2</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Bida Photo 4 -->
-          <div class="item events bida col-md-4">
-            <div class="card border-0 shadow-lg">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="images/portraits/bida4.jpeg"
-                data-img-alt="Bida S2 Netflix Photo 4">
-                <div class="card-img-container">
-                  <img src="images/portraits/bida4.jpeg" alt="Bida S2 Netflix Photo 4" class="img-fluid rounded">
-                </div>
-                <div class="card-body text-center">
-                  <h5 class="card-title">Bida S2 Moment</h5>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-          <!-- Set Card 1 -->
-          <div class="item events setcard col-md-4">
-            <div class="card border-0 shadow-lg position-relative overflow-hidden">
-              <img src="images/portraits/setcard6.png" class="img-fluid rounded card-img" alt="Set Card 1">
-              <!-- Overlay on hover -->
-              <div
-                class="vitals-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
-                <h5 class="fw-bold mb-1">Set Card 1</h5>
-                <small>Height: 5'7"</small>
-                <small>Weight: 47kg</small>
-                <small>Vitals: 33-23-34</small>
-                <small>Shoe Size: 7</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Set Card 2 -->
-          <div class="item events setcard col-md-4">
-            <div class="card border-0 shadow-lg position-relative overflow-hidden">
-              <img src="images/portraits/setcard4.png" class="img-fluid rounded card-img" alt="Set Card 4">
-              <div
-                class="vitals-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
-                <h5 class="fw-bold mb-1">Set Card 2</h5>
-                <small>Height: 5'7"</small>
-                <small>Weight: 47kg</small>
-                <small>Vitals: 33-23-34</small>
-                <small>Shoe Size: 7</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Set Card 3 -->
-          <div class="item events setcard col-md-4">
-            <div class="card border-0 shadow-lg position-relative overflow-hidden">
-              <img src="images/portraits/setcard3.png" class="img-fluid rounded card-img" alt="Set Card 5">
-              <div
-                class="vitals-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
-                <h5 class="fw-bold mb-1">Set Card 3</h5>
-                <small>Height: 5'7"</small>
-                <small>Weight: 47kg</small>
-                <small>Vitals: 33-23-34</small>
-                <small>Shoe Size: 7</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Set Card 4 -->
-          <div class="item events setcard col-md-4">
-            <div class="card border-0 shadow-lg position-relative overflow-hidden">
-              <img src="images/portraits/setcard1.png" class="img-fluid rounded card-img" alt="Set Card 5">
-              <div
-                class="vitals-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
-                <h5 class="fw-bold mb-1">Set Card 4</h5>
-                <small>Height: 5'7"</small>
-                <small>Weight: 47kg</small>
-                <small>Vitals: 33-23-34</small>
-                <small>Shoe Size: 7</small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Set Card 5 -->
-          <div class="item events setcard col-md-4">
-            <div class="card border-0 shadow-lg position-relative overflow-hidden">
-              <img src="images/portraits/setcard2.png" class="img-fluid rounded card-img" alt="Set Card 5">
-              <div
-                class="vitals-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
-                <h5 class="fw-bold mb-1">Set Card 5</h5>
-                <small>Height: 5'7"</small>
-                <small>Weight: 47kg</small>
-                <small>Vitals: 33-23-34</small>
-                <small>Shoe Size: 7</small>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- GYM Portraits -->
-          <div class="row">
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym1.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym1.png" alt="Sporty Set 1">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Sporty Set 1</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym2.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym2.png" alt="Performance Gear 5">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Performance Gear 5</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym3.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym3.png" alt="Athleisure Look 3">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Athleisure Look 3</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym5.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym5.png" alt="Fitness Fit 2">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Fitness Fit 2</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym6.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym6.png" alt="Sweat Mode 6">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Sweat Mode 6</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item gymoutfits col-md-4 mb-4">
-              <div class="card border-0 shadow-lg">
-                <a href="images/portraits/gym7.png" class="image-link">
-                  <div class="card-img-container">
-                    <img src="images/portraits/gym7.png" alt="Toned Look 7">
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Toned Look 7</h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="item gym boxing col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/2GOTFn4ABrU" title="Boxing Short 1" frameborder="0"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <div class="item  gym boxing col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/sioYboXiaJA" title="Boxing Short 2" frameborder="0"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <div class="item gym boxing col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/3DpG4YcWE3w" title="Boxing Short 3" frameborder="0"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <div class="item gym boxing col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/Aj6Y1xQst40" title="Boxing Short 4" frameborder="0"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="item gym weightlifting col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/jGVONDsuV78" title="Weightlifting Short 1" frameborder="0"
-                    allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
-              <div class="item gym weightlifting col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/WB4ZDzP0LF8" title="Weightlifting Short 2" frameborder="0"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="item gym weightlifting col-md-4">
-                <div class="ratio ratio-9x16 shadow-lg rounded">
-                  <iframe src="https://www.youtube.com/embed/hhco-8_omMY" title="Weightlifting Short 3" frameborder="0"
-                    allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content bg-transparent border-0">
-                  <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
-                    data-bs-dismiss="modal" aria-label="Close"></button>
-                  <img src="" alt="" id="modalImage" class="img-fluid rounded shadow">
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </div>
+
+      <div class="text-center mt-5">
+        <a href="portraits.html" class="btn btn-dark px-5 py-3 rounded-pill shadow-lg fw-semibold 
+        d-inline-flex align-items-center gap-2" style="transition: all 0.3s ease;">
+          <i class="bi bi-images"></i> View Full Gallery
+        </a>
+      </div>
+
     </div>
   </section>
 
-  <section id="vtr" class="my-5 py-5 px-3 bg-light">
-    <div class="pt-4 mt-4 text-center">
-      <span class="text-muted text-uppercase">Some of my Recent VTRs</span>
-      <h4 class="display-5 fw-normal mt-2">Video Tape Recordings</h4>
-    </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <div class="text-center my-4">
-      <div class="btn-group flex-wrap">
-        <button class="filter-button btn btn-outline-dark me-2" data-filter=".vtr">VTR with YES Acting</button>
-        <button class="filter-button btn btn-outline-dark me-2" data-filter=".aud">My Auditions & Screen Tests</button>
-      </div>
-    </div>
-    <!-- VTR with YES Acting -->
-    <div class="row justify-content-center vtr my-5">
-      <div class="col-lg-8">
-        <div class="text-center">
-          <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/hGkIFazS7cI?si=qQvTl6CsGUBhf1DZ" title="VTR with YES Acting"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-          </div>
-          <h5 class="mt-3">VTR with YES Acting</h5>
-        </div>
-      </div>
-    </div>
-
-    <!-- Commercial Grid -->
-    <div class="row mt-4 justify-content-center aud">
-      <!-- Commercial 1 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/9JRhHV-7DcY?si=56A7AFpjZ6fglREe" title="Commercial 1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </div>
-        <h6 class="mt-2 text-center">Commercial Material 1</h6>
-      </div>
-
-      <!-- Commercial 2 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/sYrC59eKs2o?si=Scv1h-nOXYsBwZNI" title="Commercial 2"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </div>
-        <h6 class="mt-2 text-center">Commercial Material 2</h6>
-      </div>
-
-      <!-- Commercial 3 -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/4yyLjf6w0-E?si=N0qWb8o21MD6XDeB" title="Commercial 3"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
-        </div>
-        <h6 class="mt-2 text-center">Commercial Material 3</h6>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="py-5 bg-light">
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <section id="testimonials" class="py-5 bg-white">
     <div class="container">
-      <!-- Section Header -->
       <div class="text-center mb-5">
         <h4 class="section-title text-uppercase">Testimonials</h4>
         <h2 class="display-5 fw-semibold">Clients Feedbacks</h2>
       </div>
 
-      <!-- Swiper for testimonial cards -->
       <div class="swiper testimonialSwiper">
         <div class="swiper-wrapper">
 
-          <!-- Testimonial Slide 1 -->
           <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
+            <div class="testimonial-card border-0 shadow-lg p-5 text-center"> 
+              <div class="quote-icon mb-3">"</div>
               <p class="fs-5 fst-italic">
-                "Working with Jade has been transformational. Her strategic support as an Executive Virtual Assistant
+                Working with Jade has been transformational. Her strategic support as an Executive Virtual Assistant
                 significantly streamlined my operations. Professional, efficient, and truly invaluable!"
               </p>
               <h5 class="mt-3 mb-0">Leanne</h5>
@@ -1679,11 +646,11 @@
             </div>
           </div>
 
-          <!-- Testimonial Slide 2 -->
           <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
+            <div class="testimonial-card border-0 shadow-lg p-5 text-center"> 
+              <div class="quote-icon mb-3">"</div>
               <p class="fs-5 fst-italic">
-                "As a freelance model, Jade brings a level of professionalism and artistic understanding that is truly
+                As a freelance model, Jade brings a level of professionalism and artistic understanding that is truly
                 rare. A pleasure to collaborate with!"
               </p>
               <h5 class="mt-3 mb-0">Frank</h5>
@@ -1691,11 +658,11 @@
             </div>
           </div>
 
-          <!-- Testimonial Slide 3 -->
           <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
+            <div class="testimonial-card border-0 shadow-lg p-5 text-center"> 
+              <div class="quote-icon mb-3">"</div>
               <p class="fs-5 fst-italic">
-                "Jade's hosting skills are exceptional. She commanded the room with grace and energy. Highly recommend
+                Jade's hosting skills are exceptional. She commanded the room with grace and energy. Highly recommend
                 her for any event!"
               </p>
               <h5 class="mt-3 mb-0">Telesforo</h5>
@@ -1703,72 +670,69 @@
             </div>
           </div>
 
-          <!-- Testimonial Slide 1 -->
-          <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
-              <p class="fs-5 fst-italic">
-                "Working with Jade has been transformational. Her strategic support as an Executive Virtual Assistant
-                significantly streamlined my operations. Professional, efficient, and truly invaluable!"
-              </p>
-              <h5 class="mt-3 mb-0">Leanne</h5>
-              <span class="text-muted">Tech Startup CEO</span>
-            </div>
-          </div>
-
-          <!-- Testimonial Slide 2 -->
-          <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
-              <p class="fs-5 fst-italic">
-                "As a freelance model, Jade brings a level of professionalism and artistic understanding that is truly
-                rare. A pleasure to collaborate with!"
-              </p>
-              <h5 class="mt-3 mb-0">Frank</h5>
-              <span class="text-muted">Creative Director, Fashion Brand</span>
-            </div>
-          </div>
-
-          <!-- Testimonial Slide 3 -->
-          <div class="swiper-slide">
-            <div class="card border-0 shadow-sm p-4 text-center">
-              <p class="fs-5 fst-italic">
-                "Jade's hosting skills are exceptional. She commanded the room with grace and energy. Highly recommend
-                her for any event!"
-              </p>
-              <h5 class="mt-3 mb-0">Telesforo</h5>
-              <span class="text-muted">Event Manager</span>
-            </div>
-          </div>
         </div>
 
-        <!-- Swiper Pagination Dots -->
         <div class="swiper-pagination mt-4"></div>
       </div>
     </div>
-  </section> 
+  </section>
+
+  <!-- Floating Logo Ball -->
+  <a href="https://www.facebook.com/jaddengg" target="_blank" id="floatingLogo">
+    <img src="images/logou.png" alt="Jade Logo" />
+  </a>
+
+  <script>
+    const logo = document.getElementById("floatingLogo");
+    let x = 100, y = 100;
+    let dx = 2, dy = 2;
+    let paused = false;
+
+    function moveLogo() {
+      if (!paused) {
+        const winWidth = window.innerWidth;
+        const winHeight = window.innerHeight;
+        const logoWidth = logo.offsetWidth;
+        const logoHeight = logo.offsetHeight;
+
+        x += dx;
+        y += dy;
+
+        if (x + logoWidth >= winWidth || x <= 0) dx = -dx;
+        if (y + logoHeight >= winHeight || y <= 0) dy = -dy;
+
+        logo.style.left = x + "px";
+        logo.style.top = y + "px";
+      }
+      requestAnimationFrame(moveLogo);
+    }
+
+    // Pause on click/tap, then allow link to open
+    logo.addEventListener("mousedown", () => paused = true);
+    logo.addEventListener("touchstart", () => paused = true);
+
+    // Resume after 3s if they don’t leave
+    logo.addEventListener("mouseup", () => setTimeout(() => paused = false, 3000));
+    logo.addEventListener("touchend", () => setTimeout(() => paused = false, 3000));
+
+    moveLogo();
+  </script>
 
   <!-- Footer Section -->
   <div id="footer-placeholder"></div>
-
-
   <!-- Load JavaScript Libraries -->
   <script src="js/jquery-1.11.0.min.js"></script> <!-- Older jQuery (optional if not used) -->
-
   <!-- Recommended: KEEP ONLY ONE Bootstrap version -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
   <!-- Swiper.js for carousels -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
   <!-- Isotope.js for filtering -->
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
   <!-- jQuery (latest) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
   <!-- Custom JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
-
       // === Main Banner Swiper Initialization ===
       const mainBannerSwiper = new Swiper(".main-banner", {
         loop: true,
@@ -1786,7 +750,7 @@
         },
         pagination: false // disables pagination safely
       });
- 
+
       // === Testimonials Swiper Initialization ===
       const testimonialSwiper = new Swiper(".testimonialSwiper", {
         loop: true,
@@ -1960,6 +924,25 @@
 
     videoModal.addEventListener('hidden.bs.modal', function () {
       videoIframe.src = "";
+    });
+
+    var testimonialSwiper = new Swiper(".testimonialSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        }
+      }
     });
   </script>
 </body>
