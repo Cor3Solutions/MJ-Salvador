@@ -817,7 +817,7 @@ iconify-icon.video-icon:hover {
 
 /* 3. Give the image container a fixed height and control cropping */
 .card-img-container {
-    height: 500px; /* Consistent height for all images */
+    height: auto; /* Consistent height for all images */
     overflow: hidden;
 }
 
