@@ -907,4 +907,13 @@ iconify-icon.video-icon:hover {
     flex-grow: 1;
 }
 
- 
+  /* Make navbar icons black */
+  .navbar .social-icon i {
+    color: black;
+    transition: color 0.3s ease;
+  }
+
+  /* Optional: change to pink on hover */
+  .navbar .social-icon i:hover {
+    color: #860000; /* dark pink/red accent */
+  }
