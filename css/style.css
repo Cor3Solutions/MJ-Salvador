@@ -264,7 +264,7 @@ a {
   --bs-pagination-active-bg: var(--bs-primary);
   --bs-pagination-active-border-color: var(--bs-primary);
 }
- 
+
 .underline-hover {
   position: relative;
   text-decoration: none;
@@ -305,7 +305,6 @@ a {
   color: #000; /* Slightly darker on hover */
 }
 
- 
 /* Fullscreen Overlay */
 .overlay {
   position: fixed;
@@ -449,7 +448,6 @@ a {
     box-shadow: 0 2em 0 0 var(--accent-color);
   }
 }
- 
 
 /* color box style */
 div#cboxOverlay {
@@ -743,14 +741,14 @@ iconify-icon.video-icon:hover {
   font-size: 1.1rem;
 }
 .card-img-container {
-    height: 400px; /* Adjust this value to your liking */
-    overflow: hidden;
+  height: 400px; /* Adjust this value to your liking */
+  overflow: hidden;
 }
 
 .card-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .navbar-center-logo {
   /* Position relative to the parent navbar */
@@ -763,75 +761,75 @@ iconify-icon.video-icon:hover {
 
 /* 1. Make the swiper-slide container a flex container */
 .swiper-slide {
-    height: auto;
-    display: flex;
+  height: auto;
+  display: flex;
 }
 
 /* 2. Make the card fill the full height of the slide and set a consistent min-height */
 .card {
-    height: 100%;
-    min-height: 550px; /* Adjust this value as needed to fit your content */
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  min-height: 550px; /* Adjust this value as needed to fit your content */
+  display: flex;
+  flex-direction: column;
 }
 
 /* 3. Ensure the image container has a fixed height for consistency */
 .card-img-container {
-    height: 400px; /* Keep this the same as before */
-    overflow: hidden;
+  height: 400px; /* Keep this the same as before */
+  overflow: hidden;
 }
 
 /* 4. Use object-fit to prevent image distortion */
 .card-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 5. Allow the card-body to grow and fill the remaining vertical space */
 .card-body {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .vogue-style {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem; /* Adjust this value to control the size */
-    font-weight: 500;  /* This makes the letters bold */
-    letter-spacing: 0.2em; /* This spaces out the letters */
-    text-transform: uppercase; /* Ensures all letters are capitalized */
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem; /* Adjust this value to control the size */
+  font-weight: 500; /* This makes the letters bold */
+  letter-spacing: 0.2em; /* This spaces out the letters */
+  text-transform: uppercase; /* Ensures all letters are capitalized */
 }
 
 /* 1. Ensure swiper-slide acts as a flexible container */
 .swiper-slide {
-    height: auto;
-    display: flex;
+  height: auto;
+  display: flex;
 }
 
 /* 2. Make all cards the same height and a flex container */
 .card {
-    height: 100%;
-    min-height: 550px; /* Adjust this value to your liking */
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  min-height: 550px; /* Adjust this value to your liking */
+  display: flex;
+  flex-direction: column;
 }
 
 /* 3. Give the image container a fixed height and control cropping */
 .card-img-container {
-    height: auto; /* Consistent height for all images */
-    overflow: hidden;
+  height: auto; /* Consistent height for all images */
+  overflow: hidden;
 }
 
 /* 4. The key fix for image cropping is object-position */
 .card-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top; /* This is the fix: ensures the top of the image is always visible */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; /* This is the fix: ensures the top of the image is always visible */
 }
 
 /* 5. Make the card body stretch to fill remaining space */
 .card-body {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 /*** Single Page Hero Header Start ***/
@@ -856,64 +854,161 @@ iconify-icon.video-icon:hover {
 /*** Single Page Hero Header End ***/
 
 .testimonial-card {
-    position: relative;
-    padding-top: 50px; /* Add space for the top elements */
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    height: 100%; /* Ensures all cards are the same height */
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffe4ec, #fff);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-card .quote-icon {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--bs-light); /* You can change this color */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.2;
-}
-
-/* Optional: improve Swiper's look */
-.testimonialSwiper {
-    padding-bottom: 50px;
-}
-
-/* 1. Make all Swiper slides flexible containers */
-.testimonialSwiper .swiper-slide {
-    height: auto; /* Allows slides to adapt */
-    display: flex; /* Makes slides a flex container */
-    flex-direction: column; /* Stacks children vertically */
-}
-
-/* 2. Make the testimonial card fill the full height of the slide */
-.testimonial-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distributes space between elements */
-}
-
-/* 3. Make the paragraph content grow to fill the available space */
 .testimonial-card p {
-    flex-grow: 1;
+  flex-grow: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-  /* Make navbar icons black */
-  .navbar .social-icon i {
-    color: black;
-    transition: color 0.3s ease;
-  }
+.quote-icon {
+  font-size: 5rem;
+  color: #f8c5d3;
+  opacity: 0.2;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  /* Optional: change to pink on hover */
-  .navbar .social-icon i:hover {
-    color: #860000; /* dark pink/red accent */
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;
+  border: 3px solid #fff; /* optional, gives clean border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* optional subtle shadow */
+}
+
+/* Make navbar icons black */
+.navbar .social-icon i {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* Optional: change to pink on hover */
+.navbar .social-icon i:hover {
+  color: #860000; /* dark pink/red accent */
+}
+
+/* ===== Resume Section Styling ===== */
+.resume-container {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* Header */
+.resume-container header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d2d2d;
+  letter-spacing: 2px;
+}
+
+.resume-container header p {
+  margin-top: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.resume-container header .btn {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.resume-container header .btn:hover {
+  background: #af2d54;
+}
+
+/* Grid Layout */
+.resume-container .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .resume-container .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 0.3rem;
+}
+
+/* Content Blocks */
+.main-section-item {
+  margin-bottom: 1.5rem;
+}
+
+.item-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.meta-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.95rem;
+}
+
+.bullet-list {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+  padding-left: 0.3rem;
+}
+
+.bullet-list li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* Right Column Border */
+@media (min-width: 768px) {
+  .resume-container .right-col {
+    border-left: 2px solid #e5e5e5;
+    padding-left: 2rem;
+  }
+}
+
+ 
